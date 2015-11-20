@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 1
 Title ""
 Date ""
 Rev ""
@@ -102,44 +102,6 @@ F 3 "" H 8000 950 60  0000 C CNN
 	1    8000 950 
 	1    0    0    -1  
 $EndComp
-$Sheet
-S 1650 6350 1050 800 
-U 5626F5ED
-F0 "Sheet5626F5EC" 60
-F1 "file5626F5EC.sch" 60
-$EndSheet
-$Sheet
-S 3500 6350 1150 800 
-U 5626F5F5
-F0 "Sheet5626F5F4" 60
-F1 "file5626F5F4.sch" 60
-$EndSheet
-Text Notes 700  6500 0    60   ~ 0
-4.2V - 3.0V
-Text Notes 3200 5900 0    60   ~ 0
-3.3V
-Text Notes 5000 6550 0    60   ~ 0
-5.5V
-$Sheet
-S 5500 6350 1050 850 
-U 5626F7B3
-F0 "Sheet5626F7B2" 60
-F1 "file5626F7B2.sch" 60
-$EndSheet
-$Sheet
-S 6500 5500 950  550 
-U 5626F7BD
-F0 "Sheet5626F7BC" 60
-F1 "file5626F7BC.sch" 60
-$EndSheet
-Text Notes 5900 6750 0    60   ~ 0
-MOTORS
-Text Notes 1850 6750 0    60   ~ 0
-Power Swap 3.3
-Text Notes 3750 6850 0    60   ~ 0
-Power Swap 5\n(Boost only)
-Text Notes 6650 5750 0    60   ~ 0
-Linear Regulator
 $Comp
 L MCP1700T-3302E/TT_ U?
 U 1 1 56270053
@@ -267,30 +229,6 @@ Wire Wire Line
 Wire Wire Line
 	6900 900  6800 900 
 Connection ~ 6800 900 
-Wire Wire Line
-	550  6550 1650 6550
-Wire Wire Line
-	2700 6500 2850 6500
-Wire Wire Line
-	2850 6500 2850 5900
-Wire Wire Line
-	2850 5900 3900 5900
-Wire Wire Line
-	1100 6550 1100 7600
-Wire Wire Line
-	1100 7600 3150 7600
-Wire Wire Line
-	3150 7600 3150 6500
-Wire Wire Line
-	3150 6500 3500 6500
-Connection ~ 1100 6550
-Wire Wire Line
-	4650 6550 5500 6550
-Wire Wire Line
-	4750 6550 4750 5650
-Wire Wire Line
-	4750 5650 6500 5650
-Connection ~ 4750 6550
 Wire Wire Line
 	9050 4850 9050 5200
 Wire Wire Line
