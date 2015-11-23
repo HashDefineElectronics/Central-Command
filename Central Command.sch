@@ -130,39 +130,6 @@ $EndComp
 Text Notes 8800 3800 0    60   ~ 0
 200 mA max
 $Comp
-L R R8
-U 1 1 562D2D9E
-P 5700 2750
-F 0 "R8" V 5780 2750 50  0000 C CNN
-F 1 "R" V 5700 2750 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 5630 2750 30  0001 C CNN
-F 3 "" H 5700 2750 30  0000 C CNN
-	1    5700 2750
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R7
-U 1 1 562D2E53
-P 5450 2750
-F 0 "R7" V 5530 2750 50  0000 C CNN
-F 1 "R" V 5450 2750 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 5380 2750 30  0001 C CNN
-F 3 "" H 5450 2750 30  0000 C CNN
-	1    5450 2750
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R6
-U 1 1 562D2EC7
-P 5200 2750
-F 0 "R6" V 5280 2750 50  0000 C CNN
-F 1 "R" V 5200 2750 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 5130 2750 30  0001 C CNN
-F 3 "" H 5200 2750 30  0000 C CNN
-	1    5200 2750
-	1    0    0    -1  
-$EndComp
-$Comp
 L CONN_01X06 P1
 U 1 1 562D3447
 P 550 2750
@@ -271,7 +238,7 @@ F 3 "" H 2350 1650 60  0000 C CNN
 	1    2350 1650
 	1    0    0    -1  
 $EndComp
-Text Notes 2950 1000 0    60   ~ 12
+Text Notes 2950 650  0    60   ~ 12
 PA2/PA3 will not have serial for the -C6 chip
 $Comp
 L STM32F030C8 U1
@@ -420,18 +387,6 @@ Wire Wire Line
 	7550 3250 7550 3150
 Connection ~ 6900 3250
 Wire Wire Line
-	5200 2500 6100 2500
-Wire Wire Line
-	5700 2500 5700 2600
-Wire Wire Line
-	5700 2900 5700 3100
-Wire Wire Line
-	5450 2600 5450 2500
-Connection ~ 5700 2500
-Wire Wire Line
-	5200 2600 5200 2500
-Connection ~ 5450 2500
-Wire Wire Line
 	1500 2500 3050 2500
 Wire Wire Line
 	1500 2500 1500 2800
@@ -514,4 +469,95 @@ Wire Wire Line
 Wire Wire Line
 	8650 1900 8650 2000
 Connection ~ 8650 2000
+Text GLabel 1650 6350 0    60   Input ~ 0
+NRST
+Wire Wire Line
+	1650 6350 2150 6350
+Wire Wire Line
+	2150 6350 2150 6550
+$Comp
+L C C?
+U 1 1 5652BD44
+P 1850 6650
+F 0 "C?" H 1875 6750 50  0000 L CNN
+F 1 "C" H 1875 6550 50  0000 L CNN
+F 2 "" H 1888 6500 30  0000 C CNN
+F 3 "" H 1850 6650 60  0000 C CNN
+	1    1850 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 6500 1850 6350
+Connection ~ 1850 6350
+$Comp
+L SW_PUSH SW?
+U 1 1 5652C03C
+P 2150 6850
+F 0 "SW?" H 2300 6960 50  0000 C CNN
+F 1 "SW_PUSH" H 2150 6770 50  0000 C CNN
+F 2 "" H 2150 6850 60  0000 C CNN
+F 3 "" H 2150 6850 60  0000 C CNN
+	1    2150 6850
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5652C33A
+P 2150 7300
+F 0 "#PWR?" H 2150 7050 50  0001 C CNN
+F 1 "GND" H 2150 7150 50  0000 C CNN
+F 2 "" H 2150 7300 60  0000 C CNN
+F 3 "" H 2150 7300 60  0000 C CNN
+	1    2150 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 7150 2150 7300
+Wire Wire Line
+	2150 7250 1850 7250
+Wire Wire Line
+	1850 7250 1850 6800
+Connection ~ 2150 7250
+Text Notes 2350 6600 0    60   ~ 0
+RESET BUTTON
+Text Notes 5050 2100 0    60   ~ 0
+TODO: Add values \nand labels
+$Comp
+L CONN_01X03 P?
+U 1 1 5652DAE0
+P 5150 2500
+F 0 "P?" H 5150 2700 50  0000 C CNN
+F 1 "CONN_01X03" V 5250 2500 50  0000 C CNN
+F 2 "" H 5150 2500 60  0000 C CNN
+F 3 "" H 5150 2500 60  0000 C CNN
+	1    5150 2500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 2500 6100 2500
+Wire Wire Line
+	5350 2600 5500 2600
+Wire Wire Line
+	5500 2600 5500 2900
+$Comp
+L GND #PWR?
+U 1 1 5652DC74
+P 5500 2900
+F 0 "#PWR?" H 5500 2650 50  0001 C CNN
+F 1 "GND" H 5500 2750 50  0000 C CNN
+F 2 "" H 5500 2900 60  0000 C CNN
+F 3 "" H 5500 2900 60  0000 C CNN
+	1    5500 2900
+	1    0    0    -1  
+$EndComp
+Text GLabel 5550 2150 2    60   Input ~ 0
+3V3
+Wire Wire Line
+	5550 2150 5450 2150
+Wire Wire Line
+	5450 2150 5450 2400
+Wire Wire Line
+	5450 2400 5350 2400
+Text Notes 1900 1050 0    60   ~ 0
+Rising edge for WKUP1 brings \ndevice out of sleep mode
 $EndSCHEMATC
