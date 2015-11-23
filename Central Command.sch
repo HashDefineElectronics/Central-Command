@@ -173,6 +173,192 @@ F 3 "" H 550 2750 60  0000 C CNN
 	1    550  2750
 	-1   0    0    -1  
 $EndComp
+Text GLabel 1900 1900 2    60   Input ~ 0
+3V3
+$Comp
+L R R2
+U 1 1 562D36B1
+P 850 2250
+F 0 "R2" V 930 2250 50  0000 C CNN
+F 1 "0" V 850 2250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 780 2250 30  0001 C CNN
+F 3 "" H 850 2250 30  0000 C CNN
+	1    850  2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 562D38AD
+P 1000 3200
+F 0 "#PWR03" H 1000 2950 50  0001 C CNN
+F 1 "GND" H 1000 3050 50  0000 C CNN
+F 2 "" H 1000 3200 60  0000 C CNN
+F 3 "" H 1000 3200 60  0000 C CNN
+	1    1000 3200
+	1    0    0    -1  
+$EndComp
+Text GLabel 1050 3600 2    60   Input ~ 0
+NRST
+Text GLabel 6100 2850 0    60   Input ~ 0
+NRST
+$Comp
+L R R4
+U 1 1 562D3B38
+P 1850 2900
+F 0 "R4" V 1930 2900 50  0000 C CNN
+F 1 "R" V 1850 2900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 1780 2900 30  0001 C CNN
+F 3 "" H 1850 2900 30  0000 C CNN
+	1    1850 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 562D3B9C
+P 1650 2250
+F 0 "R3" V 1730 2250 50  0000 C CNN
+F 1 "R" V 1650 2250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 1580 2250 30  0001 C CNN
+F 3 "" H 1650 2250 30  0000 C CNN
+	1    1650 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 562D411E
+P 750 3350
+F 0 "R1" V 830 3350 50  0000 C CNN
+F 1 "R" V 750 3350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 680 3350 30  0001 C CNN
+F 3 "" H 750 3350 30  0000 C CNN
+	1    750  3350
+	1    0    0    -1  
+$EndComp
+Text GLabel 1050 4000 2    60   Input ~ 0
+TRACE
+Text Notes 8000 2300 0    60   ~ 12
+I2C1 DOES NOT EXIST FOR -C6 CHIP
+$Comp
+L R R5
+U 1 1 562D4FA8
+P 2700 2000
+F 0 "R5" V 2780 2000 50  0000 C CNN
+F 1 "R" V 2700 2000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 2630 2000 30  0001 C CNN
+F 3 "" H 2700 2000 30  0000 C CNN
+	1    2700 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X02 P2
+U 1 1 562D514A
+P 2000 1450
+F 0 "P2" H 2000 1600 50  0000 C CNN
+F 1 "CONN_01X02" V 2100 1450 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 2000 1450 60  0001 C CNN
+F 3 "" H 2000 1450 60  0000 C CNN
+	1    2000 1450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 562D543E
+P 2350 1650
+F 0 "#PWR04" H 2350 1400 50  0001 C CNN
+F 1 "GND" H 2350 1500 50  0000 C CNN
+F 2 "" H 2350 1650 60  0000 C CNN
+F 3 "" H 2350 1650 60  0000 C CNN
+	1    2350 1650
+	1    0    0    -1  
+$EndComp
+Text Notes 2950 1000 0    60   ~ 12
+PA2/PA3 will not have serial for the -C6 chip
+$Comp
+L STM32F030C8 U1
+U 1 1 564E875E
+P 4000 1950
+F 0 "U1" H 4550 1000 60  0000 C CNN
+F 1 "STM32F030C8" H 4350 2850 60  0000 C CNN
+F 2 "Housings_QFP:LQFP-48_7x7mm_Pitch0.5mm" H 4000 1950 60  0001 C CNN
+F 3 "" H 4000 1950 60  0000 C CNN
+	1    4000 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L STM32F030C8 U1
+U 2 1 564E8A03
+P 4100 4300
+F 0 "U1" H 4650 3350 60  0000 C CNN
+F 1 "STM32F030C8" H 4450 5200 60  0000 C CNN
+F 2 "Housings_QFP:LQFP-48_7x7mm_Pitch0.5mm" H 4100 4300 60  0001 C CNN
+F 3 "" H 4100 4300 60  0000 C CNN
+	2    4100 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L STM32F030C8 U1
+U 3 1 564E8FF6
+P 7050 2050
+F 0 "U1" H 7600 1100 60  0000 C CNN
+F 1 "STM32F030C8" H 7400 2950 60  0000 C CNN
+F 2 "Housings_QFP:LQFP-48_7x7mm_Pitch0.5mm" H 7050 2050 60  0001 C CNN
+F 3 "" H 7050 2050 60  0000 C CNN
+	3    7050 2050
+	1    0    0    -1  
+$EndComp
+Text Notes 9150 1300 0    60   ~ 0
+TODO: Get crystal/oscillator
+Text Notes 2550 3100 0    60   ~ 0
+TODO: Figure out comm/power header
+Text Notes 5200 5500 0    60   ~ 0
+TODO: Determine if USB micro header would be a good fit for troubleshooting.
+Text Notes 5150 5700 0    60   ~ 0
+TODO: Determine if USB could be used for serial comm (ask Ron)
+$Comp
+L Crystal Y1
+U 1 1 56529888
+P 8650 1750
+F 0 "Y1" H 8650 1900 50  0000 C CNN
+F 1 "Crystal" H 8650 1600 50  0000 C CNN
+F 2 "Crystals:Crystal_HC49-U_Vertical" H 8650 1750 60  0001 C CNN
+F 3 "" H 8650 1750 60  0000 C CNN
+F 4 "http://parts.io/detail/343558/FOXSLF%2F080-20" H 8650 1750 60  0001 C CNN "Link"
+	1    8650 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L C C4
+U 1 1 5652990D
+P 9100 1550
+F 0 "C4" H 9125 1650 50  0000 L CNN
+F 1 "20P" H 9125 1450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 9138 1400 30  0001 C CNN
+F 3 "" H 9100 1550 60  0000 C CNN
+	1    9100 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L C C5
+U 1 1 56529966
+P 9100 2000
+F 0 "C5" H 9125 2100 50  0000 L CNN
+F 1 "20P" H 9125 1900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 9138 1850 30  0001 C CNN
+F 3 "" H 9100 2000 60  0000 C CNN
+	1    9100 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 56529BFD
+P 9650 1950
+F 0 "#PWR05" H 9650 1700 50  0001 C CNN
+F 1 "GND" H 9650 1800 50  0000 C CNN
+F 2 "" H 9650 1950 60  0000 C CNN
+F 3 "" H 9650 1950 60  0000 C CNN
+	1    9650 1950
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	7550 800  8000 800 
 Wire Wire Line
@@ -251,38 +437,14 @@ Wire Wire Line
 	1500 2500 1500 2800
 Wire Wire Line
 	1500 2800 750  2800
-Text GLabel 1900 1900 2    60   Input ~ 0
-3V3
 Wire Wire Line
 	850  1900 1900 1900
 Wire Wire Line
 	850  1900 850  2100
-$Comp
-L R R2
-U 1 1 562D36B1
-P 850 2250
-F 0 "R2" V 930 2250 50  0000 C CNN
-F 1 "0" V 850 2250 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 780 2250 30  0001 C CNN
-F 3 "" H 850 2250 30  0000 C CNN
-	1    850  2250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	850  2400 850  2500
 Wire Wire Line
 	850  2500 750  2500
-$Comp
-L GND #PWR03
-U 1 1 562D38AD
-P 1000 3200
-F 0 "#PWR03" H 1000 2950 50  0001 C CNN
-F 1 "GND" H 1000 3050 50  0000 C CNN
-F 2 "" H 1000 3200 60  0000 C CNN
-F 3 "" H 1000 3200 60  0000 C CNN
-	1    1000 3200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1000 2700 1000 3200
 Wire Wire Line
@@ -291,36 +453,10 @@ Wire Wire Line
 	750  2900 850  2900
 Wire Wire Line
 	850  2900 850  3600
-Text GLabel 1050 3600 2    60   Input ~ 0
-NRST
 Wire Wire Line
 	850  3600 1050 3600
-Text GLabel 6100 2850 0    60   Input ~ 0
-NRST
 Wire Wire Line
 	6100 2650 6100 2850
-$Comp
-L R R4
-U 1 1 562D3B38
-P 1850 2900
-F 0 "R4" V 1930 2900 50  0000 C CNN
-F 1 "R" V 1850 2900 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 1780 2900 30  0001 C CNN
-F 3 "" H 1850 2900 30  0000 C CNN
-	1    1850 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R3
-U 1 1 562D3B9C
-P 1650 2250
-F 0 "R3" V 1730 2250 50  0000 C CNN
-F 1 "R" V 1650 2250 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 1580 2250 30  0001 C CNN
-F 3 "" H 1650 2250 30  0000 C CNN
-	1    1650 2250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1650 2400 1650 2500
 Connection ~ 1650 2500
@@ -337,51 +473,14 @@ Wire Wire Line
 Wire Wire Line
 	750  2600 3050 2600
 Connection ~ 1850 2600
-$Comp
-L R R1
-U 1 1 562D411E
-P 750 3350
-F 0 "R1" V 830 3350 50  0000 C CNN
-F 1 "R" V 750 3350 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 680 3350 30  0001 C CNN
-F 3 "" H 750 3350 30  0000 C CNN
-	1    750  3350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	750  3200 750  3000
 Wire Wire Line
 	750  3500 750  4000
 Wire Wire Line
 	750  4000 1050 4000
-Text GLabel 1050 4000 2    60   Input ~ 0
-TRACE
-Text Notes 8000 2300 0    60   ~ 12
-I2C1 DOES NOT EXIST FOR -C6 CHIP
-$Comp
-L R R5
-U 1 1 562D4FA8
-P 2700 2000
-F 0 "R5" V 2780 2000 50  0000 C CNN
-F 1 "R" V 2700 2000 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 2630 2000 30  0001 C CNN
-F 3 "" H 2700 2000 30  0000 C CNN
-	1    2700 2000
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	2850 2000 3050 2000
-$Comp
-L CONN_01X02 P2
-U 1 1 562D514A
-P 2000 1450
-F 0 "P2" H 2000 1600 50  0000 C CNN
-F 1 "CONN_01X02" V 2100 1450 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 2000 1450 60  0001 C CNN
-F 3 "" H 2000 1450 60  0000 C CNN
-	1    2000 1450
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	2550 2000 2550 1400
 Wire Wire Line
@@ -390,58 +489,29 @@ Wire Wire Line
 	2200 1500 2350 1500
 Wire Wire Line
 	2350 1500 2350 1650
-$Comp
-L GND #PWR04
-U 1 1 562D543E
-P 2350 1650
-F 0 "#PWR04" H 2350 1400 50  0001 C CNN
-F 1 "GND" H 2350 1500 50  0000 C CNN
-F 2 "" H 2350 1650 60  0000 C CNN
-F 3 "" H 2350 1650 60  0000 C CNN
-	1    2350 1650
-	1    0    0    -1  
-$EndComp
-Text Notes 2950 1000 0    60   ~ 12
-PA2/PA3 will not have serial for the -C6 chip
-$Comp
-L STM32F030C8 U1
-U 1 1 564E875E
-P 4000 1950
-F 0 "U1" H 4550 1000 60  0000 C CNN
-F 1 "STM32F030C8" H 4350 2850 60  0000 C CNN
-F 2 "Housings_QFP:LQFP-48_7x7mm_Pitch0.5mm" H 4000 1950 60  0001 C CNN
-F 3 "" H 4000 1950 60  0000 C CNN
-	1    4000 1950
-	1    0    0    -1  
-$EndComp
-$Comp
-L STM32F030C8 U1
-U 2 1 564E8A03
-P 4100 4300
-F 0 "U1" H 4650 3350 60  0000 C CNN
-F 1 "STM32F030C8" H 4450 5200 60  0000 C CNN
-F 2 "Housings_QFP:LQFP-48_7x7mm_Pitch0.5mm" H 4100 4300 60  0001 C CNN
-F 3 "" H 4100 4300 60  0000 C CNN
-	2    4100 4300
-	1    0    0    -1  
-$EndComp
-$Comp
-L STM32F030C8 U1
-U 3 1 564E8FF6
-P 7050 2050
-F 0 "U1" H 7600 1100 60  0000 C CNN
-F 1 "STM32F030C8" H 7400 2950 60  0000 C CNN
-F 2 "Housings_QFP:LQFP-48_7x7mm_Pitch0.5mm" H 7050 2050 60  0001 C CNN
-F 3 "" H 7050 2050 60  0000 C CNN
-	3    7050 2050
-	1    0    0    -1  
-$EndComp
-Text Notes 8050 1700 0    60   ~ 0
-TODO: Get crystal/oscillator
-Text Notes 2550 3100 0    60   ~ 0
-TODO: Figure out comm/power header
-Text Notes 5200 5500 0    60   ~ 0
-TODO: Determine if USB micro header would be a good fit for troubleshooting.
-Text Notes 5150 5700 0    60   ~ 0
-TODO: Determine if USB could be used for serial comm (ask Ron)
+Wire Wire Line
+	8950 1550 7900 1550
+Wire Wire Line
+	7900 1550 7900 1700
+Wire Wire Line
+	8650 1600 8650 1550
+Connection ~ 8650 1550
+Wire Wire Line
+	9250 1550 9450 1550
+Wire Wire Line
+	9450 1550 9450 2000
+Wire Wire Line
+	9450 2000 9250 2000
+Wire Wire Line
+	9450 1800 9650 1800
+Wire Wire Line
+	9650 1800 9650 1950
+Connection ~ 9450 1800
+Wire Wire Line
+	8950 2000 7900 2000
+Wire Wire Line
+	7900 2000 7900 1800
+Wire Wire Line
+	8650 1900 8650 2000
+Connection ~ 8650 2000
 $EndSCHEMATC
