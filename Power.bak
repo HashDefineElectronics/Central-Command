@@ -35,7 +35,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
+Sheet 2 3
 Title ""
 Date ""
 Rev ""
@@ -92,10 +92,6 @@ F 3 "" H 5500 2100 60  0000 C CNN
 $EndComp
 Text Notes 5250 700  0    60   ~ 0
 200 mA max
-Text Notes 3900 2550 0    60   ~ 0
-TODO: Determine if USB micro header would be a good fit for troubleshooting.
-Text Notes 3850 2750 0    60   ~ 0
-TODO: Determine if USB could be used for serial comm (ask Ron)
 $Comp
 L CONN_01X02 P?
 U 1 1 56442D62
@@ -143,7 +139,7 @@ $EndComp
 Wire Wire Line
 	5500 1750 5500 2100
 Wire Wire Line
-	5500 1900 6600 1900
+	5500 1900 7200 1900
 Wire Wire Line
 	6600 1900 6600 1550
 Connection ~ 5500 1900
@@ -239,14 +235,10 @@ Wire Wire Line
 	4600 3950 1300 3950
 Wire Wire Line
 	1300 3950 1300 3500
-Text HLabel 7250 3750 2    60   Input ~ 0
+Text HLabel 7800 3750 2    60   Input ~ 0
 TXD
-Text HLabel 7150 3900 2    60   Input ~ 0
+Text HLabel 7700 3900 2    60   Input ~ 0
 RXD
-Wire Wire Line
-	6550 3900 7150 3900
-Wire Wire Line
-	7250 3750 6550 3750
 $Comp
 L D_Schottky D?
 U 1 1 565622B8
@@ -278,7 +270,7 @@ F 3 "" H 3700 2650 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 Text HLabel 7200 1000 2    60   Input ~ 0
-3V3
+PWR
 $Comp
 L C C?
 U 1 1 56567F6F
@@ -380,7 +372,7 @@ $EndComp
 Wire Wire Line
 	5350 6100 5350 6250
 Wire Wire Line
-	5350 6200 5800 6200
+	5350 6200 6000 6200
 Wire Wire Line
 	5800 6200 5800 6100
 Connection ~ 5350 6200
@@ -504,4 +496,40 @@ F 3 "" H 7300 4450 60  0000 C CNN
 	1    7300 4450
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	6000 6200 6000 6100
+Connection ~ 5800 6200
+$Comp
+L R R?
+U 1 1 5656E5CA
+P 6900 3750
+F 0 "R?" V 6980 3750 50  0000 C CNN
+F 1 "0" V 6900 3750 50  0000 C CNN
+F 2 "" V 6830 3750 30  0000 C CNN
+F 3 "" H 6900 3750 30  0000 C CNN
+	1    6900 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 5656E668
+P 6900 3900
+F 0 "R?" V 6980 3900 50  0000 C CNN
+F 1 "0" V 6900 3900 50  0000 C CNN
+F 2 "" V 6830 3900 30  0000 C CNN
+F 3 "" H 6900 3900 30  0000 C CNN
+	1    6900 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6750 3900 6550 3900
+Wire Wire Line
+	6550 3750 6750 3750
+Wire Wire Line
+	7050 3900 7700 3900
+Wire Wire Line
+	7050 3750 7800 3750
+Connection ~ 6600 1900
+Text HLabel 7200 1900 2    60   Input ~ 0
+GND
 $EndSCHEMATC

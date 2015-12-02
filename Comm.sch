@@ -1,0 +1,400 @@
+EESchema Schematic File Version 2
+LIBS:Central Command-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:stm32f030c8
+LIBS:Central Command-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_01X04 P?
+U 1 1 565ED26A
+P 5400 1350
+F 0 "P?" H 5400 1600 50  0000 C CNN
+F 1 "CONN_01X04" V 5500 1350 50  0000 C CNN
+F 2 "" H 5400 1350 60  0000 C CNN
+F 3 "" H 5400 1350 60  0000 C CNN
+	1    5400 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X04 P?
+U 1 1 565ED2F9
+P 5400 3100
+F 0 "P?" H 5400 3350 50  0000 C CNN
+F 1 "CONN_01X04" V 5500 3100 50  0000 C CNN
+F 2 "" H 5400 3100 60  0000 C CNN
+F 3 "" H 5400 3100 60  0000 C CNN
+	1    5400 3100
+	1    0    0    -1  
+$EndComp
+Text HLabel 2250 1200 0    60   Input ~ 0
+GND
+Text HLabel 2250 1300 0    60   Input ~ 0
+PWR
+Text HLabel 2250 1400 0    60   Input ~ 0
+SCL
+Text HLabel 2250 1500 0    60   Input ~ 0
+SDA
+Wire Wire Line
+	2250 1500 4500 1500
+Wire Wire Line
+	4500 1500 5200 1500
+Wire Wire Line
+	2250 1400 4600 1400
+Wire Wire Line
+	4600 1400 5200 1400
+Wire Wire Line
+	2250 1300 2450 1300
+Wire Wire Line
+	2450 1300 4700 1300
+Wire Wire Line
+	4700 1300 5200 1300
+Wire Wire Line
+	2250 1200 4800 1200
+Wire Wire Line
+	4800 1200 5200 1200
+Wire Wire Line
+	4800 1200 4800 2950
+Wire Wire Line
+	4800 2950 5200 2950
+Connection ~ 4800 1200
+Wire Wire Line
+	4700 1300 4700 3050
+Wire Wire Line
+	4700 3050 5200 3050
+Connection ~ 4700 1300
+Wire Wire Line
+	4600 1400 4600 3150
+Wire Wire Line
+	4600 3150 5200 3150
+Connection ~ 4600 1400
+Wire Wire Line
+	5200 3250 4500 3250
+Wire Wire Line
+	4500 3250 4500 1500
+Connection ~ 4500 1500
+Text Notes 5250 2050 0    60   ~ 0
+Seeed Studio Grove Connector (2mm)
+Text Notes 6150 2850 0    60   ~ 0
+TODO: Check if we need any kind of reverse protection
+Text Notes 6150 3050 0    60   ~ 0
+TODO: Talk about daisy chaining
+$Comp
+L CONN_01X06 P?
+U 1 1 565FC7BB
+P 4600 4900
+F 0 "P?" H 4600 5250 50  0000 C CNN
+F 1 "CONN_01X06" V 4700 4900 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06" H 4600 4900 60  0001 C CNN
+F 3 "" H 4600 4900 60  0000 C CNN
+	1    4600 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 565FC7C3
+P 4300 4400
+F 0 "R?" V 4380 4400 50  0000 C CNN
+F 1 "0" V 4300 4400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 4230 4400 30  0001 C CNN
+F 3 "" H 4300 4400 30  0000 C CNN
+	1    4300 4400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 565FC7CA
+P 4150 5350
+F 0 "#PWR?" H 4150 5100 50  0001 C CNN
+F 1 "GND" H 4150 5200 50  0000 C CNN
+F 2 "" H 4150 5350 60  0000 C CNN
+F 3 "" H 4150 5350 60  0000 C CNN
+	1    4150 5350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 565FC7D1
+P 3300 5050
+F 0 "R?" V 3380 5050 50  0000 C CNN
+F 1 "R" V 3300 5050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 3230 5050 30  0001 C CNN
+F 3 "" H 3300 5050 30  0000 C CNN
+	1    3300 5050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 565FC7D8
+P 3500 4400
+F 0 "R?" V 3580 4400 50  0000 C CNN
+F 1 "R" V 3500 4400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 3430 4400 30  0001 C CNN
+F 3 "" H 3500 4400 30  0000 C CNN
+	1    3500 4400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 565FC7DF
+P 4400 5500
+F 0 "R?" V 4480 5500 50  0000 C CNN
+F 1 "R" V 4400 5500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 4330 5500 30  0001 C CNN
+F 3 "" H 4400 5500 30  0000 C CNN
+	1    4400 5500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 4650 3500 4650
+Wire Wire Line
+	3500 4650 3650 4650
+Wire Wire Line
+	3650 4650 3650 4950
+Wire Wire Line
+	3650 4950 4400 4950
+Wire Wire Line
+	2450 4050 3500 4050
+Wire Wire Line
+	3500 4050 4300 4050
+Wire Wire Line
+	4300 4050 4300 4250
+Wire Wire Line
+	4300 4550 4300 4650
+Wire Wire Line
+	4300 4650 4400 4650
+Wire Wire Line
+	4150 4850 4150 5300
+Wire Wire Line
+	4150 5300 4150 5350
+Wire Wire Line
+	4150 4850 4400 4850
+Wire Wire Line
+	4400 5050 4300 5050
+Wire Wire Line
+	4300 5750 4300 5050
+Wire Wire Line
+	1950 5750 2100 5750
+Wire Wire Line
+	2100 5750 4300 5750
+Wire Wire Line
+	3500 4650 3500 4550
+Connection ~ 3500 4650
+Wire Wire Line
+	3500 4250 3500 4050
+Connection ~ 3500 4050
+Wire Wire Line
+	3300 5200 3300 5300
+Wire Wire Line
+	3300 5300 4150 5300
+Connection ~ 4150 5300
+Wire Wire Line
+	3300 4750 3300 4900
+Wire Wire Line
+	1950 4750 3300 4750
+Wire Wire Line
+	3300 4750 4400 4750
+Connection ~ 3300 4750
+Wire Wire Line
+	4400 5350 4400 5150
+Wire Wire Line
+	4400 6150 4400 5650
+Wire Wire Line
+	1950 6150 4400 6150
+Wire Wire Line
+	2450 4050 2450 1300
+Connection ~ 2450 1300
+Text HLabel 1950 4650 0    60   Input ~ 0
+SWIO
+Text HLabel 1950 4750 0    60   Input ~ 0
+SWCLK
+Text HLabel 1950 5750 0    60   Input ~ 0
+NRST
+Text HLabel 1950 6150 0    60   Input ~ 0
+TRACE
+Text Notes 5150 4950 0    60   ~ 0
+Programming Header
+Wire Wire Line
+	2100 6450 2300 6450
+Wire Wire Line
+	2300 6450 2600 6450
+Wire Wire Line
+	2600 6450 2600 6650
+$Comp
+L C C?
+U 1 1 565FED42
+P 2300 6750
+F 0 "C?" H 2325 6850 50  0000 L CNN
+F 1 "C" H 2325 6650 50  0000 L CNN
+F 2 "" H 2338 6600 30  0000 C CNN
+F 3 "" H 2300 6750 60  0000 C CNN
+	1    2300 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 6600 2300 6450
+Connection ~ 2300 6450
+$Comp
+L SW_PUSH SW?
+U 1 1 565FED4B
+P 2600 6950
+F 0 "SW?" H 2750 7060 50  0000 C CNN
+F 1 "SW_PUSH" H 2600 6870 50  0000 C CNN
+F 2 "" H 2600 6950 60  0000 C CNN
+F 3 "" H 2600 6950 60  0000 C CNN
+	1    2600 6950
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 565FED52
+P 2600 7400
+F 0 "#PWR?" H 2600 7150 50  0001 C CNN
+F 1 "GND" H 2600 7250 50  0000 C CNN
+F 2 "" H 2600 7400 60  0000 C CNN
+F 3 "" H 2600 7400 60  0000 C CNN
+	1    2600 7400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 7250 2600 7350
+Wire Wire Line
+	2600 7350 2600 7400
+Wire Wire Line
+	2600 7350 2300 7350
+Wire Wire Line
+	2300 7350 2300 6900
+Connection ~ 2600 7350
+Text Notes 2800 6700 0    60   ~ 0
+RESET BUTTON
+Wire Wire Line
+	2100 5750 2100 6450
+Connection ~ 2100 5750
+$Comp
+L R R?
+U 1 1 5660DBD0
+P 9500 5400
+F 0 "R?" V 9580 5400 50  0000 C CNN
+F 1 "R" V 9500 5400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 9430 5400 30  0001 C CNN
+F 3 "" H 9500 5400 30  0000 C CNN
+	1    9500 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X02 P?
+U 1 1 5660DBD7
+P 8800 4850
+F 0 "P?" H 8800 5000 50  0000 C CNN
+F 1 "CONN_01X02" V 8900 4850 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 8800 4850 60  0001 C CNN
+F 3 "" H 8800 4850 60  0000 C CNN
+	1    8800 4850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5660DBDE
+P 9150 5050
+F 0 "#PWR?" H 9150 4800 50  0001 C CNN
+F 1 "GND" H 9150 4900 50  0000 C CNN
+F 2 "" H 9150 5050 60  0000 C CNN
+F 3 "" H 9150 5050 60  0000 C CNN
+	1    9150 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 5400 9350 4800
+Wire Wire Line
+	9350 4800 9000 4800
+Wire Wire Line
+	9000 4900 9150 4900
+Wire Wire Line
+	9150 4900 9150 5050
+Wire Wire Line
+	9650 5400 10100 5400
+Text HLabel 10100 5400 2    60   Input ~ 0
+MCO
+Text Notes 7750 5400 2    60   ~ 0
+TODO: Add values \nand labels
+$Comp
+L CONN_01X03 P?
+U 1 1 56617724
+P 7650 5800
+F 0 "P?" H 7650 6000 50  0000 C CNN
+F 1 "CONN_01X03" V 7750 5800 50  0000 C CNN
+F 2 "" H 7650 5800 60  0000 C CNN
+F 3 "" H 7650 5800 60  0000 C CNN
+	1    7650 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 5900 7300 5900
+Wire Wire Line
+	7300 5900 7300 6200
+$Comp
+L GND #PWR?
+U 1 1 5661772D
+P 7300 6200
+F 0 "#PWR?" H 7300 5950 50  0001 C CNN
+F 1 "GND" H 7300 6050 50  0000 C CNN
+F 2 "" H 7300 6200 60  0000 C CNN
+F 3 "" H 7300 6200 60  0000 C CNN
+	1    7300 6200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 5450 7350 5450
+Wire Wire Line
+	7350 5450 7350 5700
+Wire Wire Line
+	7350 5700 7450 5700
+Wire Wire Line
+	7450 5800 7150 5800
+Text Label 6950 5450 0    60   ~ 0
+PWR
+Text Label 2600 1300 0    60   ~ 0
+PWR
+Text HLabel 7150 5800 0    60   Input ~ 0
+BOOT0
+$EndSCHEMATC
