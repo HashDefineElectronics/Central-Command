@@ -115,8 +115,6 @@ F 3 "" H 4200 1950 60  0000 C CNN
 	3    4200 1950
 	1    0    0    -1  
 $EndComp
-Text Notes 5100 2850 0    60   ~ 0
-TODO: Figure out comm/power header
 $Comp
 L Crystal Y101
 U 1 1 56529888
@@ -650,4 +648,6 @@ Text Notes 5600 6900 0    60   ~ 0
 SENSOR I2C HEADER
 Text Notes 800  4300 0    60   ~ 0
 GPIO HEADER 2
+Text Notes 5100 3050 0    60   ~ 0
+TODO: Add indicator LEDs
 $EndSCHEMATC
