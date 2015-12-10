@@ -76,39 +76,17 @@ SCL
 Text HLabel 2250 1500 0    60   Input ~ 0
 SDA
 Wire Wire Line
-	2250 1500 5200 1500
-Wire Wire Line
-	2250 1400 5200 1400
-Wire Wire Line
-	2250 1300 5200 1300
-Wire Wire Line
-	2250 1200 5200 1200
-Wire Wire Line
-	4800 1200 4800 2400
-Wire Wire Line
 	4800 2400 5200 2400
-Connection ~ 4800 1200
-Wire Wire Line
-	4700 1300 4700 2500
 Wire Wire Line
 	4700 2500 5200 2500
-Connection ~ 4700 1300
-Wire Wire Line
-	4600 1400 4600 2600
 Wire Wire Line
 	4600 2600 5200 2600
-Connection ~ 4600 1400
 Wire Wire Line
 	5200 2700 4500 2700
-Wire Wire Line
-	4500 2700 4500 1500
-Connection ~ 4500 1500
-Text Notes 5250 2050 0    60   ~ 0
+Text Notes 5900 2000 0    60   ~ 0
 Seeed Studio Grove Connector (2mm)
-Text Notes 5800 2450 0    60   ~ 0
+Text Notes 6100 2200 0    60   ~ 0
 TODO: Check if we need any kind of reverse protection
-Text Notes 5800 2650 0    60   ~ 0
-TODO: Talk about daisy chaining
 $Comp
 L CONN_01X06 P201
 U 1 1 565FC7BB
@@ -377,4 +355,80 @@ Text Notes 8050 5900 0    60   ~ 0
 Boot Header
 Text Label 9100 4800 0    60   ~ 0
 ClockHeader
+Wire Wire Line
+	5200 1200 2250 1200
+Wire Wire Line
+	2250 1300 5200 1300
+Wire Wire Line
+	5200 1400 2250 1400
+Wire Wire Line
+	2250 1500 5200 1500
+$Comp
+L R R?
+U 1 1 56691488
+P 4800 2050
+F 0 "R?" V 4880 2050 50  0000 C CNN
+F 1 "0" V 4800 2050 50  0000 C CNN
+F 2 "" V 4730 2050 30  0000 C CNN
+F 3 "" H 4800 2050 30  0000 C CNN
+	1    4800 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 2200 4800 2400
+Wire Wire Line
+	4800 1900 4800 1500
+Connection ~ 4800 1500
+$Comp
+L R R?
+U 1 1 566915C1
+P 4700 2050
+F 0 "R?" V 4780 2050 50  0000 C CNN
+F 1 "0" V 4700 2050 50  0000 C CNN
+F 2 "" V 4630 2050 30  0000 C CNN
+F 3 "" H 4700 2050 30  0000 C CNN
+	1    4700 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 2500 4700 2200
+$Comp
+L R R?
+U 1 1 56691697
+P 4600 2050
+F 0 "R?" V 4680 2050 50  0000 C CNN
+F 1 "0" V 4600 2050 50  0000 C CNN
+F 2 "" V 4530 2050 30  0000 C CNN
+F 3 "" H 4600 2050 30  0000 C CNN
+	1    4600 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 2600 4600 2200
+Wire Wire Line
+	4600 1900 4600 1300
+Connection ~ 4600 1300
+Wire Wire Line
+	4700 1900 4700 1400
+Connection ~ 4700 1400
+$Comp
+L R R?
+U 1 1 56691864
+P 4500 2050
+F 0 "R?" V 4580 2050 50  0000 C CNN
+F 1 "0" V 4500 2050 50  0000 C CNN
+F 2 "" V 4430 2050 30  0000 C CNN
+F 3 "" H 4500 2050 30  0000 C CNN
+	1    4500 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 2700 4500 2200
+Wire Wire Line
+	4500 1900 4500 1200
+Connection ~ 4500 1200
+Text Notes 5650 1350 0    60   ~ 0
+OUTPUT
+Text Notes 5600 2650 0    60   ~ 0
+INPUT
 $EndSCHEMATC
