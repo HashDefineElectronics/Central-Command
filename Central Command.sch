@@ -650,4 +650,15 @@ Text Notes 800  4300 0    60   ~ 0
 GPIO HEADER 2
 Text Notes 5100 3050 0    60   ~ 0
 TODO: Add indicator LEDs
+$Comp
+L GND #PWR?
+U 1 1 56774FCA
+P 5150 1100
+F 0 "#PWR?" H 5150 850 50  0001 C CNN
+F 1 "GND" H 5150 950 50  0000 C CNN
+F 2 "" H 5150 1100 60  0000 C CNN
+F 3 "" H 5150 1100 60  0000 C CNN
+	1    5150 1100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
