@@ -256,51 +256,6 @@ Wire Wire Line
 Connection ~ 5750 6150
 Text Notes 5950 5500 0    60   ~ 0
 RESET BUTTON
-$Comp
-L R R205
-U 1 1 5660DBD0
-P 9900 5750
-F 0 "R205" V 9980 5750 50  0000 C CNN
-F 1 "R" V 9900 5750 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 9830 5750 30  0001 C CNN
-F 3 "" H 9900 5750 30  0000 C CNN
-	1    9900 5750
-	0    1    1    0   
-$EndComp
-$Comp
-L CONN_01X02 P205
-U 1 1 5660DBD7
-P 9200 5200
-F 0 "P205" H 9200 5350 50  0000 C CNN
-F 1 "CONN_01X02" V 9300 5200 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 9200 5200 60  0001 C CNN
-F 3 "" H 9200 5200 60  0000 C CNN
-	1    9200 5200
-	-1   0    0    -1  
-$EndComp
-$Comp
-L GND #PWR08
-U 1 1 5660DBDE
-P 9550 5400
-F 0 "#PWR08" H 9550 5150 50  0001 C CNN
-F 1 "GND" H 9550 5250 50  0000 C CNN
-F 2 "" H 9550 5400 60  0000 C CNN
-F 3 "" H 9550 5400 60  0000 C CNN
-	1    9550 5400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9750 5750 9750 5150
-Wire Wire Line
-	9750 5150 9400 5150
-Wire Wire Line
-	9400 5250 9550 5250
-Wire Wire Line
-	9550 5250 9550 5400
-Wire Wire Line
-	10050 5750 10500 5750
-Text HLabel 10500 5750 2    60   Input ~ 0
-MCO
 Text Notes 7900 5450 2    60   ~ 0
 TODO: Add values \nand labels
 $Comp
@@ -353,8 +308,6 @@ Text Label 5250 5250 0    60   ~ 0
 NRST
 Text Notes 8050 5900 0    60   ~ 0
 Boot Header
-Text Label 9100 4800 0    60   ~ 0
-ClockHeader
 Wire Wire Line
 	5200 1200 2250 1200
 Wire Wire Line
