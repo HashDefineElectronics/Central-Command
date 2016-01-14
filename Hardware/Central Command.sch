@@ -36,14 +36,14 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 3
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
-Comment3 ""
-Comment4 ""
+Title "Central Command"
+Date "2016-01-14"
+Rev "0"
+Comp "Contextual Electronics"
+Comment1 "CEDOC-0603"
+Comment2 "contextualelectronics.com"
+Comment3 "N/A"
+Comment4 "N/A"
 $EndDescr
 $Comp
 L INDUCTOR L101
@@ -795,4 +795,34 @@ Connection ~ 9450 700
 Wire Wire Line
 	9950 700  9950 850 
 Connection ~ 9700 700 
+Text Label 1650 1600 0    60   ~ 0
+PC13
+Text Label 1650 1700 0    60   ~ 0
+PC14
+Text Label 1650 1800 0    60   ~ 0
+PC15
+Text Label 1650 1900 0    60   ~ 0
+PA0
+Text Label 1650 2000 0    60   ~ 0
+PA4
+Text Label 1650 2100 0    60   ~ 0
+PA5
+Text Label 1650 2200 0    60   ~ 0
+PA6
+Text Label 1650 2300 0    60   ~ 0
+PA7
+Text Label 1200 4950 0    60   ~ 0
+PB2
+Text Label 1200 5050 0    60   ~ 0
+PB10
+Text Label 1200 5150 0    60   ~ 0
+PB11
+Text Label 1200 5250 0    60   ~ 0
+PB12
+Text Label 1200 5350 0    60   ~ 0
+PB13
+Text Label 1200 5450 0    60   ~ 0
+PB14
+Text Label 1200 5550 0    60   ~ 0
+PB15
 $EndSCHEMATC

@@ -1,0 +1,444 @@
+<html>
+<head>
+<style>
+body{
+	background-color: #ededed;
+	min-width: 842px;
+}
+#BOMInfoID  {
+	padding: 15px;
+	display: inline-block;
+}
+#BOMInfoID strong {
+    float: left;
+    min-width: 250px;
+    padding: 5px;
+    padding-bottom: 15px;
+    min-height: 100px;
+    text-transform: uppercase;	
+}
+#BOMInfoID h1 {
+	font-size: 16px;
+	color: #444;
+	padding-left: 10px;
+	text-transform: lowercase;
+}
+.group{
+	width:100%;
+}
+.column, .Head{
+    float: left;
+    width: 150px;
+    height: auto;
+    text-align: center;
+     margin: 10px;
+}
+.partRow{
+	    display: table;
+	    font-size: 14px;
+}
+#TableId{
+	background-color: white;
+	width: 1300px;
+	margin: 0 auto;
+	border-radius: 5px;
+	box-shadow: 0 10px 50px rgba(0,0,0,0.2);
+}
+.footer, .Header{
+	padding:5px;
+	text-align: center;
+}
+.Header a{
+	float: left;
+	width: 44%;
+	margin: 15px;
+}
+.footer a,
+.Header a,
+.group_title,
+.Head{
+	color: #444;
+    display: block;
+    font-size: 0.5em;
+    text-decoration: none;
+}
+.Header a{
+	font-size: 1.6em;
+}
+.Head{
+	font-size: 20px;
+}
+.group_title{
+	text-align: center;
+	font-size: 1.5em;
+}
+.group_T:after{
+	content:"Test Pads";
+}
+.group_L:after{
+	content:"Inductors";
+}
+.group_C:after{
+	content:"Capacitors";
+}
+.group_D:after{
+	content:"Diodes";
+}
+.group_F:after{
+	content:"Fuse";
+}
+.group_FB:after{
+	content:"Filter Beads";
+}
+.group_P:after{
+	content:"Connectors";
+}
+.group_Q:after{
+	content:"Transistor, MOSFET and FET";
+}
+.group_R:after{
+	content:"Resistors";
+
+}
+.group_U:after{
+	content:"Semiconductors";
+}
+.group_V:after{
+	content:"Varistors";
+}
+.group_Y:after{
+	content:"Crystals";
+}
+.group_SW:after{
+	content:"Switches";
+}
+.group .group_title{
+	color: #444;
+}
+/*http://www.askapache.com/online-tools/base64-image-converter/*/
+#logo { background-image: url("data:image/png;base64,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");
+    width: 575px;
+    height: 105px;
+    display: inline-block;
+    float: right;
+    margin-top: 45px;
+    margin-right: 120px;
+    background-size: contain;
+background-color: black;
+}
+</style>
+</head>
+<body>
+<div id="main">
+	<div id="TableId">
+		<div class="group Header"><a href="contextualelectronics.com"><h1>Central Command BOM Rev 0</h1></a> <div id="logo"></div></div>
+		<div id="BOMInfoID">
+			<strong>Date<h1> 2016-01-14</h1></strong>
+			<strong>Company<h1> Contextual Electronics</h1></strong>
+			<strong>Document No.<h1> CEDOC-0603</h1></strong>
+			<strong>Website<h1> contextualelectronics.com</h1></strong>
+			<strong>Comment 3<h1> N/A</h1></strong>
+			<strong>Comment 4<h1> N/A</h1></strong>
+			<strong>Total Parts<h1> 54 (Unique 25)</h1></strong>
+	
+		</div>
+
+		<div class="group"><div class="partRow"><div class='Head'>Ref</div><div class='Head'>Qty</div><div class='Head'>Value</div><div class='Head'>Link</div></div></div>
+		<hr>
+<div class="group group_title group_C">
+[C] -
+</div>
+<hr>
+<div class="group">
+	
+<div class="partRow">
+	<div class="column RefClass">C101 C201 </div>
+	<div class="column QuantityClass">2</div>
+	<div class="column ValueClass">C</div>
+	
+<div class="column FiledClass Field_Link"> </div>
+
+</div>
+
+<div class="partRow">
+	<div class="column RefClass">C102 C103 </div>
+	<div class="column QuantityClass">2</div>
+	<div class="column ValueClass">20P</div>
+	
+<div class="column FiledClass Field_Link"> </div>
+
+</div>
+
+<div class="partRow">
+	<div class="column RefClass">C104 C107 C301 C302 C304 </div>
+	<div class="column QuantityClass">5</div>
+	<div class="column ValueClass">.1U</div>
+	
+<div class="column FiledClass Field_Link"> </div>
+
+</div>
+
+<div class="partRow">
+	<div class="column RefClass">C105 C108 </div>
+	<div class="column QuantityClass">2</div>
+	<div class="column ValueClass">1U</div>
+	
+<div class="column FiledClass Field_Link"> </div>
+
+</div>
+
+<div class="partRow">
+	<div class="column RefClass">C106 C109 C305 C306 </div>
+	<div class="column QuantityClass">4</div>
+	<div class="column ValueClass">10U</div>
+	
+<div class="column FiledClass Field_Link"> </div>
+
+</div>
+
+<div class="partRow">
+	<div class="column RefClass">C303 </div>
+	<div class="column QuantityClass">1</div>
+	<div class="column ValueClass">4.7U</div>
+	
+<div class="column FiledClass Field_Link"> </div>
+
+</div>
+
+</div>
+<hr>
+<div class="group group_title group_D">
+[D] -
+</div>
+<hr>
+<div class="group">
+	
+<div class="partRow">
+	<div class="column RefClass">D301 D302 </div>
+	<div class="column QuantityClass">2</div>
+	<div class="column ValueClass">D_Schottky</div>
+	
+<div class="column FiledClass Field_Link"> </div>
+
+</div>
+
+<div class="partRow">
+	<div class="column RefClass">D303 D304 </div>
+	<div class="column QuantityClass">2</div>
+	<div class="column ValueClass">LED</div>
+	
+<div class="column FiledClass Field_Link"> </div>
+
+</div>
+
+</div>
+<hr>
+<div class="group group_title group_L">
+[L] -
+</div>
+<hr>
+<div class="group">
+	
+<div class="partRow">
+	<div class="column RefClass">L101 </div>
+	<div class="column QuantityClass">1</div>
+	<div class="column ValueClass">INDUCTOR</div>
+	
+<div class="column FiledClass Field_Link"> </div>
+
+</div>
+
+<div class="partRow">
+	<div class="column RefClass">L301 </div>
+	<div class="column QuantityClass">1</div>
+	<div class="column ValueClass">FERRITE</div>
+	
+<div class="column FiledClass Field_Link"> </div>
+
+</div>
+
+</div>
+<hr>
+<div class="group group_title group_P">
+[P] -
+</div>
+<hr>
+<div class="group">
+	
+<div class="partRow">
+	<div class="column RefClass">P102 P101 </div>
+	<div class="column QuantityClass">2</div>
+	<div class="column ValueClass">CONN_01X10</div>
+	
+<div class="column FiledClass Field_Link"> </div>
+
+</div>
+
+<div class="partRow">
+	<div class="column RefClass">P105 P103 P202 P203 </div>
+	<div class="column QuantityClass">4</div>
+	<div class="column ValueClass">CONN_01X04</div>
+	
+<div class="column FiledClass Field_Link"> </div>
+
+</div>
+
+<div class="partRow">
+	<div class="column RefClass">P106 P104 P302 </div>
+	<div class="column QuantityClass">3</div>
+	<div class="column ValueClass">CONN_01X02</div>
+	
+<div class="column FiledClass Field_Link"> </div>
+
+</div>
+
+<div class="partRow">
+	<div class="column RefClass">P201 </div>
+	<div class="column QuantityClass">1</div>
+	<div class="column ValueClass">CONN_01X06</div>
+	
+<div class="column FiledClass Field_Link"> </div>
+
+</div>
+
+<div class="partRow">
+	<div class="column RefClass">P204 </div>
+	<div class="column QuantityClass">1</div>
+	<div class="column ValueClass">CONN_01X03</div>
+	
+<div class="column FiledClass Field_Link"> </div>
+
+</div>
+
+<div class="partRow">
+	<div class="column RefClass">P301 </div>
+	<div class="column QuantityClass">1</div>
+	<div class="column ValueClass">USB_B</div>
+	
+<div class="column FiledClass Field_Link"> </div>
+
+</div>
+
+</div>
+<hr>
+<div class="group group_title group_R">
+[R] -
+</div>
+<hr>
+<div class="group">
+	
+<div class="partRow">
+	<div class="column RefClass">R203 R209 R208 R207 R206 R301 R302 R303 </div>
+	<div class="column QuantityClass">8</div>
+	<div class="column ValueClass">0</div>
+	
+<div class="column FiledClass Field_Link"> </div>
+
+</div>
+
+<div class="partRow">
+	<div class="column RefClass">R201 R202 R204 </div>
+	<div class="column QuantityClass">3</div>
+	<div class="column ValueClass">R</div>
+	
+<div class="column FiledClass Field_Link"> </div>
+
+</div>
+
+<div class="partRow">
+	<div class="column RefClass">R306 R307 </div>
+	<div class="column QuantityClass">2</div>
+	<div class="column ValueClass">270</div>
+	
+<div class="column FiledClass Field_Link"> </div>
+
+</div>
+
+<div class="partRow">
+	<div class="column RefClass">R304 R305 </div>
+	<div class="column QuantityClass">2</div>
+	<div class="column ValueClass">NOPE</div>
+	
+<div class="column FiledClass Field_Link"> </div>
+
+</div>
+
+</div>
+<hr>
+<div class="group group_title group_SW">
+[SW] -
+</div>
+<hr>
+<div class="group">
+	
+<div class="partRow">
+	<div class="column RefClass">SW201 </div>
+	<div class="column QuantityClass">1</div>
+	<div class="column ValueClass">FSM2JSMAA-ND</div>
+	
+<div class="column FiledClass Field_Link"> </div>
+
+</div>
+
+</div>
+<hr>
+<div class="group group_title group_U">
+[U] -
+</div>
+<hr>
+<div class="group">
+	
+<div class="partRow">
+	<div class="column RefClass">U101 </div>
+	<div class="column QuantityClass">1</div>
+	<div class="column ValueClass">STM32F030C8</div>
+	
+<div class="column FiledClass Field_Link"> </div>
+
+</div>
+
+<div class="partRow">
+	<div class="column RefClass">U301 </div>
+	<div class="column QuantityClass">1</div>
+	<div class="column ValueClass">MCP1700T-3302E/TT_</div>
+	
+<div class="column FiledClass Field_Link">http://parts.io/detail/1370896/MCP1700T-3302E%2FTT</div>
+
+</div>
+
+<div class="partRow">
+	<div class="column RefClass">U302 </div>
+	<div class="column QuantityClass">1</div>
+	<div class="column ValueClass">FT232RQ</div>
+	
+<div class="column FiledClass Field_Link"> </div>
+
+</div>
+
+</div>
+<hr>
+<div class="group group_title group_Y">
+[Y] -
+</div>
+<hr>
+<div class="group">
+	
+<div class="partRow">
+	<div class="column RefClass">Y101 </div>
+	<div class="column QuantityClass">1</div>
+	<div class="column ValueClass">Crystal</div>
+	
+<div class="column FiledClass Field_Link">http://parts.io/detail/343558/FOXSLF%2F080-20</div>
+
+</div>
+
+</div>
+
+		<hr>
+
+		<div class="group footer">	<h1><a href="contextualelectronics.com">Template created by Ronald SOusa (HashDEfineElectronics.com) - Generated:Thu 14 Jan 2016 12:10:12 PM UTC</a></h1></div>
+	</div>
+</div>
+
+</body>
+</html>

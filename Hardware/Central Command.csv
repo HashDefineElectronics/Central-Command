@@ -1,0 +1,42 @@
+Title,Central Command
+Revision,0
+Date,2016-01-14
+Company,Contextual Electronics
+Document No.,CEDOC-0603
+Website,contextualelectronics.com
+Comment 3,N/A
+Comment 4,N/A
+Total Parts,54
+Total Unique Parts,25
+,
+,
+Ref,Qty,Value,Link,
+C101 C201 ,2,C,, 
+C102 C103 ,2,20P,, 
+C104 C107 C301 C302 C304 ,5,.1U,, 
+C105 C108 ,2,1U,, 
+C106 C109 C305 C306 ,4,10U,, 
+C303 ,1,4.7U,, 
+D301 D302 ,2,D_Schottky,, 
+D303 D304 ,2,LED,, 
+L101 ,1,INDUCTOR,, 
+L301 ,1,FERRITE,, 
+P102 P101 ,2,CONN_01X10,, 
+P105 P103 P202 P203 ,4,CONN_01X04,, 
+P106 P104 P302 ,3,CONN_01X02,, 
+P201 ,1,CONN_01X06,, 
+P204 ,1,CONN_01X03,, 
+P301 ,1,USB_B,, 
+R203 R209 R208 R207 R206 R301 R302 R303 ,8,0,, 
+R201 R202 R204 ,3,R,, 
+R306 R307 ,2,270,, 
+R304 R305 ,2,NOPE,, 
+SW201 ,1,FSM2JSMAA-ND,, 
+U101 ,1,STM32F030C8,, 
+U301 ,1,MCP1700T-3302E/TT_,,http://parts.io/detail/1370896/MCP1700T-3302E%2FTT
+U302 ,1,FT232RQ,, 
+Y101 ,1,Crystal,,http://parts.io/detail/343558/FOXSLF%2F080-20
+
+,
+,
+Template created by Ronald SOusa (HashDEfineElectronics.com) - Generated:Thu 14 Jan 2016 12:10:14 PM UTC
