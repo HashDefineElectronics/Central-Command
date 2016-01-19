@@ -36,21 +36,21 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 3
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
-Comment3 ""
-Comment4 ""
+Title "Central Command"
+Date "2016-01-14"
+Rev "0"
+Comp "Contextual Electronics"
+Comment1 "CEDOC-0603"
+Comment2 "contextualelectronics.com"
+Comment3 "N/A"
+Comment4 "N/A"
 $EndDescr
 $Comp
 L INDUCTOR L101
 U 1 1 5626F24B
 P 4400 700
 F 0 "L101" V 4350 700 50  0000 C CNN
-F 1 "INDUCTOR" V 4500 700 50  0000 C CNN
+F 1 "10uH" V 4500 700 50  0000 C CNN
 F 2 "Inductors_NEOSID:Neosid_Inductor_SM1206" H 4400 700 60  0001 C CNN
 F 3 "" H 4400 700 60  0000 C CNN
 	1    4400 700 
@@ -61,7 +61,7 @@ L C C101
 U 1 1 5626F380
 P 5150 850
 F 0 "C101" H 5175 950 50  0000 L CNN
-F 1 "C" H 5175 750 50  0000 L CNN
+F 1 ".1U" H 5175 750 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 5188 700 30  0001 C CNN
 F 3 "" H 5150 850 60  0000 C CNN
 	1    5150 850 
@@ -90,6 +90,7 @@ F 0 "U101" H 4750 3550 60  0000 C CNN
 F 1 "STM32F030C8" H 4550 5400 60  0000 C CNN
 F 2 "Housings_QFP:LQFP-48_7x7mm_Pitch0.5mm" H 4200 4500 60  0001 C CNN
 F 3 "" H 4200 4500 60  0000 C CNN
+F 4 "STM32F030C8" H 4200 4500 60  0001 C CNN "MPN"
 	1    4200 4500
 	1    0    0    -1  
 $EndComp
@@ -112,6 +113,8 @@ F 0 "U101" H 4750 1000 60  0000 C CNN
 F 1 "STM32F030C8" H 4550 2850 60  0000 C CNN
 F 2 "Housings_QFP:LQFP-48_7x7mm_Pitch0.5mm" H 4200 1950 60  0001 C CNN
 F 3 "" H 4200 1950 60  0000 C CNN
+F 4 "STM32F030C8" H 4200 1950 60  0001 C CNN "MPN"
+F 5 "https://parts.io/detail/153811934/STM32F030C8T6TR" H 4200 1950 60  0001 C CNN "Link"
 	3    4200 1950
 	1    0    0    -1  
 $EndComp
@@ -123,7 +126,8 @@ F 0 "Y101" H 5800 1800 50  0000 C CNN
 F 1 "Crystal" H 5800 1500 50  0000 C CNN
 F 2 "Crystals:Crystal_HC49-U_Vertical" H 5800 1650 60  0001 C CNN
 F 3 "" H 5800 1650 60  0000 C CNN
-F 4 "http://parts.io/detail/343558/FOXSLF%2F080-20" H 5800 1650 60  0001 C CNN "Link"
+F 4 "FOXSLF/080-20" H 5800 1650 60  0001 C CNN "MPN"
+F 5 "http://parts.io/detail/343558/FOXSLF%2F080-20" H 5800 1650 60  0001 C CNN "Link"
 	1    5800 1650
 	0    1    1    0   
 $EndComp

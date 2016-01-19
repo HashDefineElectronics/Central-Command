@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>/home/vagrant/Desktop/Central-Command/Hardware/Central Command.sch</source>
-    <date>Thu 14 Jan 2016 12:10:14 PM UTC</date>
-    <tool>Eeschema 4.0.1-3.201512221402+6198~38~ubuntu14.04.1-stable</tool>
+    <source>C:/Users/chris/PCBs/Central-Command/Hardware/CentralCommand.sch</source>
+    <date>1/19/2016 12:25:35 AM</date>
+    <tool>Eeschema 4.0.1-stable</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>Central Command</title>
         <company>Contextual Electronics</company>
         <rev>0</rev>
         <date>2016-01-14</date>
-        <source>Central Command.sch</source>
+        <source>CentralCommand.sch</source>
         <comment number="1" value="CEDOC-0603"/>
         <comment number="2" value="contextualelectronics.com"/>
         <comment number="3" value="N/A"/>
@@ -46,14 +46,14 @@
   </design>
   <components>
     <comp ref="L101">
-      <value>INDUCTOR</value>
+      <value>10uH</value>
       <footprint>Inductors_NEOSID:Neosid_Inductor_SM1206</footprint>
       <libsource lib="device" part="INDUCTOR"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5626F24B</tstamp>
     </comp>
     <comp ref="C101">
-      <value>C</value>
+      <value>.1U</value>
       <footprint>Capacitors_SMD:C_0805</footprint>
       <libsource lib="device" part="C"/>
       <sheetpath names="/" tstamps="/"/>
@@ -62,6 +62,9 @@
     <comp ref="U101">
       <value>STM32F030C8</value>
       <footprint>Housings_QFP:LQFP-48_7x7mm_Pitch0.5mm</footprint>
+      <fields>
+        <field name="MPN">STM32F030C8</field>
+      </fields>
       <libsource lib="stm32f030c8" part="STM32F030C8"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>564E875E</tstamp>
@@ -70,6 +73,7 @@
       <value>Crystal</value>
       <footprint>Crystals:Crystal_HC49-U_Vertical</footprint>
       <fields>
+        <field name="MPN">FOXSLF/080-20</field>
         <field name="Link">http://parts.io/detail/343558/FOXSLF%2F080-20</field>
       </fields>
       <libsource lib="device" part="Crystal"/>
@@ -203,37 +207,40 @@
       <tstamp>565FC7C3</tstamp>
     </comp>
     <comp ref="R201">
-      <value>R</value>
+      <value>10K</value>
       <footprint>Resistors_SMD:R_0805</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/Comm/" tstamps="/565ED06F/"/>
       <tstamp>565FC7D1</tstamp>
     </comp>
     <comp ref="R202">
-      <value>R</value>
+      <value>10K</value>
       <footprint>Resistors_SMD:R_0805</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/Comm/" tstamps="/565ED06F/"/>
       <tstamp>565FC7D8</tstamp>
     </comp>
     <comp ref="R204">
-      <value>R</value>
+      <value>10K</value>
       <footprint>Resistors_SMD:R_0805</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/Comm/" tstamps="/565ED06F/"/>
       <tstamp>565FC7DF</tstamp>
     </comp>
     <comp ref="C201">
-      <value>C</value>
+      <value>.1</value>
       <footprint>Capacitors_SMD:C_0805</footprint>
       <libsource lib="device" part="C"/>
       <sheetpath names="/Comm/" tstamps="/565ED06F/"/>
       <tstamp>565FED42</tstamp>
     </comp>
     <comp ref="SW201">
-      <value>FSM2JSMAA-ND</value>
+      <value>PushButton</value>
       <footprint>CentralCommand:FSM2JSMAA-ND</footprint>
-      <datasheet>http://www.digikey.com/product-detail/en/FSM2JSMAA/FSM2JSMAA-ND/2400228</datasheet>
+      <fields>
+        <field name="MPN">FSM2JSMAA</field>
+        <field name="Link">http://www.digikey.com/product-detail/en/FSM2JSMAA/FSM2JSMAA-ND/2400228</field>
+      </fields>
       <libsource lib="device" part="SW_PUSH"/>
       <sheetpath names="/Comm/" tstamps="/565ED06F/"/>
       <tstamp>565FED4B</tstamp>
@@ -274,9 +281,10 @@
       <tstamp>56691864</tstamp>
     </comp>
     <comp ref="U301">
-      <value>MCP1700T-3302E/TT_</value>
+      <value>MCP1700T</value>
       <footprint>Housings_SOT-23_SOT-143_TSOT-6:SOT-23</footprint>
       <fields>
+        <field name="MPN">MCP1700T-3302E/TT_</field>
         <field name="Link">http://parts.io/detail/1370896/MCP1700T-3302E%2FTT</field>
       </fields>
       <libsource lib="stm32f030c8" part="MCP1700T-3302E/TT_"/>
@@ -307,6 +315,10 @@
     <comp ref="U302">
       <value>FT232RQ</value>
       <footprint>Housings_DFN_QFN:QFN-32-1EP_5x5mm_Pitch0.5mm</footprint>
+      <fields>
+        <field name="MPN">FT232RQ-REEL</field>
+        <field name="Link">http://parts.io/detail/3622205/FT232RQ-REEL</field>
+      </fields>
       <libsource lib="stm32f030c8" part="FT232RQ"/>
       <sheetpath names="/Power/" tstamps="/56440BA6/"/>
       <tstamp>565601D9</tstamp>
@@ -314,6 +326,10 @@
     <comp ref="P301">
       <value>USB_B</value>
       <footprint>CentralCommand:10118193</footprint>
+      <fields>
+        <field name="MPN">10118193</field>
+        <field name="Link">http://parts.io/detail/93261255/10118193-0001LF</field>
+      </fields>
       <libsource lib="conn" part="USB_B"/>
       <sheetpath names="/Power/" tstamps="/56440BA6/"/>
       <tstamp>56560CE5</tstamp>
@@ -335,6 +351,10 @@
     <comp ref="D301">
       <value>D_Schottky</value>
       <footprint>Diodes_SMD:Diode-SMA_Standard</footprint>
+      <fields>
+        <field name="MPN">B130-13-F</field>
+        <field name="Link">http://parts.io/detail/305034/B130-13-F</field>
+      </fields>
       <libsource lib="device" part="D_Schottky"/>
       <sheetpath names="/Power/" tstamps="/56440BA6/"/>
       <tstamp>565622B8</tstamp>
@@ -342,6 +362,10 @@
     <comp ref="D302">
       <value>D_Schottky</value>
       <footprint>Diodes_SMD:Diode-SMA_Standard</footprint>
+      <fields>
+        <field name="MPN">B130-13-F</field>
+        <field name="Link">http://parts.io/detail/305034/B130-13-F</field>
+      </fields>
       <libsource lib="device" part="D_Schottky"/>
       <sheetpath names="/Power/" tstamps="/56440BA6/"/>
       <tstamp>565637EA</tstamp>
@@ -765,13 +789,13 @@
   </libparts>
   <libraries>
     <library logical="device">
-      <uri>/usr/share/kicad/library/device.lib</uri>
-    </library>
-    <library logical="conn">
-      <uri>/usr/share/kicad/library/conn.lib</uri>
+      <uri>C:\Program Files\KiCad\share\kicad\library\device.lib</uri>
     </library>
     <library logical="stm32f030c8">
-      <uri>/home/vagrant/Desktop/Central-Command/Hardware/stm32f030c8.lib</uri>
+      <uri>C:\Users\chris\PCBs\Central-Command\Hardware\stm32f030c8.lib</uri>
+    </library>
+    <library logical="conn">
+      <uri>C:\Program Files\KiCad\share\kicad\library\conn.lib</uri>
     </library>
   </libraries>
   <nets>

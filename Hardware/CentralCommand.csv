@@ -1,0 +1,28 @@
+Reference, Quantity, Value, Footprint, Datasheet, MPN, Link
+C101 C104 C107 C301 C302 C304 ,6,.1U,Capacitors_SMD:C_0805,
+C102 C103 ,2,20P,Capacitors_SMD:C_0805,
+C105 C108 ,2,1U,Capacitors_SMD:C_1206,
+C106 C109 ,2,10U,Capacitors_SMD:C_1206,
+C201 ,1,.1,Capacitors_SMD:C_0805,
+C303 ,1,4.7U,Capacitors_SMD:C_1210,
+C305 C306 ,2,10U,Capacitors_SMD:C_1210,
+D301 D302 ,2,D_Schottky,Diodes_SMD:Diode-SMA_Standard,,B130-13-F,http://parts.io/detail/305034/B130-13-F
+D303 D304 ,2,LED,LEDs:LED-0805,
+L101 ,1,10uH,Inductors_NEOSID:Neosid_Inductor_SM1206,
+L301 ,1,FERRITE,Inductors_NEOSID:Neosid_Inductor_SM1206,
+P101 P102 ,2,CONN_01X10,Pin_Headers:Pin_Header_Straight_1x10,
+P103 P105 ,2,CONN_01X04,Pin_Headers:Pin_Header_Straight_1x04,
+P104 P106 P302 ,3,CONN_01X02,Pin_Headers:Pin_Header_Straight_1x02,
+P201 ,1,CONN_01X06,Pin_Headers:Pin_Header_Straight_1x06,
+P202 P203 ,2,CONN_01X04,CentralCommand:Grove-2mm,
+P204 ,1,CONN_01X03,Pin_Headers:Pin_Header_Straight_1x03,
+P301 ,1,USB_B,CentralCommand:10118193,,10118193,http://parts.io/detail/93261255/10118193-0001LF
+R201 R202 R204 ,3,10K,Resistors_SMD:R_0805,
+R203 R206 R207 R208 R209 R301 R302 R303 ,8,0,Resistors_SMD:R_0805,
+R304 R305 ,2,NOPE,Resistors_SMD:R_0805,
+R306 R307 ,2,270,Resistors_SMD:R_0805,
+SW201 ,1,PushButton,CentralCommand:FSM2JSMAA-ND,,FSM2JSMAA,http://www.digikey.com/product-detail/en/FSM2JSMAA/FSM2JSMAA-ND/2400228
+U101 ,1,STM32F030C8,Housings_QFP:LQFP-48_7x7mm_Pitch0.5mm,,STM32F030C8,
+U301 ,1,MCP1700T,Housings_SOT-23_SOT-143_TSOT-6:SOT-23,,MCP1700T-3302E/TT_,http://parts.io/detail/1370896/MCP1700T-3302E%2FTT
+U302 ,1,FT232RQ,Housings_DFN_QFN:QFN-32-1EP_5x5mm_Pitch0.5mm,,FT232RQ-REEL,http://parts.io/detail/3622205/FT232RQ-REEL
+Y101 ,1,Crystal,Crystals:Crystal_HC49-U_Vertical,,FOXSLF/080-20,http://parts.io/detail/343558/FOXSLF%2F080-20
