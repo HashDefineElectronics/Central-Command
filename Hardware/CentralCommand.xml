@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>C:/Users/chris/PCBs/Central-Command/Hardware/CentralCommand.sch</source>
-    <date>1/19/2016 12:25:35 AM</date>
-    <tool>Eeschema 4.0.1-stable</tool>
+    <source>/home/vagrant/Desktop/Central-Command/Hardware/CentralCommand.sch</source>
+    <date>Wed 27 Jan 2016 05:17:26 PM UTC</date>
+    <tool>Eeschema 4.0.1-3.201512221402+6198~38~ubuntu14.04.1-stable</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>Central Command</title>
@@ -55,6 +55,10 @@
     <comp ref="C101">
       <value>.1U</value>
       <footprint>Capacitors_SMD:C_0805</footprint>
+      <fields>
+        <field name="Farnell">2496944</field>
+        <field name="MPN">0805B104K500CT</field>
+      </fields>
       <libsource lib="device" part="C"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5626F380</tstamp>
@@ -64,6 +68,7 @@
       <footprint>Housings_QFP:LQFP-48_7x7mm_Pitch0.5mm</footprint>
       <fields>
         <field name="MPN">STM32F030C8</field>
+        <field name="Farnell">2393634</field>
       </fields>
       <libsource lib="stm32f030c8" part="STM32F030C8"/>
       <sheetpath names="/" tstamps="/"/>
@@ -83,6 +88,10 @@
     <comp ref="C102">
       <value>20P</value>
       <footprint>Capacitors_SMD:C_0805</footprint>
+      <fields>
+        <field name="Farnell">2332762</field>
+        <field name="MPN">08055A200JAT2A</field>
+      </fields>
       <libsource lib="device" part="C"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5652990D</tstamp>
@@ -90,6 +99,10 @@
     <comp ref="C103">
       <value>20P</value>
       <footprint>Capacitors_SMD:C_0805</footprint>
+      <fields>
+        <field name="Farnell">2332762</field>
+        <field name="MPN">08055A200JAT2A</field>
+      </fields>
       <libsource lib="device" part="C"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>56529966</tstamp>
@@ -97,6 +110,10 @@
     <comp ref="P102">
       <value>CONN_01X10</value>
       <footprint>Pin_Headers:Pin_Header_Straight_1x10</footprint>
+      <fields>
+        <field name="Farnell">1022261</field>
+        <field name="MPN">M20-9991046</field>
+      </fields>
       <libsource lib="conn" part="CONN_01X10"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>56624354</tstamp>
@@ -104,6 +121,10 @@
     <comp ref="P105">
       <value>CONN_01X04</value>
       <footprint>Pin_Headers:Pin_Header_Straight_1x04</footprint>
+      <fields>
+        <field name="Farnell">1022251</field>
+        <field name="MPN">M20-9990446</field>
+      </fields>
       <libsource lib="conn" part="CONN_01X04"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>56634405</tstamp>
@@ -111,6 +132,10 @@
     <comp ref="P103">
       <value>CONN_01X04</value>
       <footprint>Pin_Headers:Pin_Header_Straight_1x04</footprint>
+      <fields>
+        <field name="Farnell">1022251</field>
+        <field name="MPN">M20-9990446</field>
+      </fields>
       <libsource lib="conn" part="CONN_01X04"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>56638780</tstamp>
@@ -118,6 +143,10 @@
     <comp ref="P106">
       <value>CONN_01X02</value>
       <footprint>Pin_Headers:Pin_Header_Straight_1x02</footprint>
+      <fields>
+        <field name="Farnell">1022247</field>
+        <field name="MPN">M20-9990246</field>
+      </fields>
       <libsource lib="conn" part="CONN_01X02"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5663E66F</tstamp>
@@ -125,6 +154,10 @@
     <comp ref="P101">
       <value>CONN_01X10</value>
       <footprint>Pin_Headers:Pin_Header_Straight_1x10</footprint>
+      <fields>
+        <field name="Farnell">1022261</field>
+        <field name="MPN">M20-9991046</field>
+      </fields>
       <libsource lib="conn" part="CONN_01X10"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5664380D</tstamp>
@@ -132,6 +165,10 @@
     <comp ref="P104">
       <value>CONN_01X02</value>
       <footprint>Pin_Headers:Pin_Header_Straight_1x02</footprint>
+      <fields>
+        <field name="Farnell">1022247</field>
+        <field name="MPN">M20-9990246</field>
+      </fields>
       <libsource lib="conn" part="CONN_01X02"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5665792F</tstamp>
@@ -139,6 +176,10 @@
     <comp ref="C104">
       <value>.1U</value>
       <footprint>Capacitors_SMD:C_0805</footprint>
+      <fields>
+        <field name="Farnell">2496944</field>
+        <field name="MPN">0805B104K500CT</field>
+      </fields>
       <libsource lib="device" part="C"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>567FA6C3</tstamp>
@@ -146,6 +187,10 @@
     <comp ref="C105">
       <value>1U</value>
       <footprint>Capacitors_SMD:C_1206</footprint>
+      <fields>
+        <field name="Farnell">1856632</field>
+        <field name="MPN">MCSH31B105K100CT</field>
+      </fields>
       <libsource lib="device" part="C"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>567FB209</tstamp>
@@ -153,6 +198,10 @@
     <comp ref="C106">
       <value>10U</value>
       <footprint>Capacitors_SMD:C_1206</footprint>
+      <fields>
+        <field name="Farnell">2320921</field>
+        <field name="MPN">MC1206B106K160CT</field>
+      </fields>
       <libsource lib="device" part="C"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>567FBA72</tstamp>
@@ -160,6 +209,10 @@
     <comp ref="C107">
       <value>.1U</value>
       <footprint>Capacitors_SMD:C_0805</footprint>
+      <fields>
+        <field name="Farnell">2496944</field>
+        <field name="MPN">0805B104K500CT</field>
+      </fields>
       <libsource lib="device" part="C"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>567FDA4E</tstamp>
@@ -167,6 +220,10 @@
     <comp ref="C108">
       <value>1U</value>
       <footprint>Capacitors_SMD:C_1206</footprint>
+      <fields>
+        <field name="Farnell">1856632</field>
+        <field name="MPN">MCSH31B105K100CT</field>
+      </fields>
       <libsource lib="device" part="C"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>567FDB95</tstamp>
@@ -174,6 +231,10 @@
     <comp ref="C109">
       <value>10U</value>
       <footprint>Capacitors_SMD:C_1206</footprint>
+      <fields>
+        <field name="Farnell">2320921</field>
+        <field name="MPN">MC1206B106K160CT</field>
+      </fields>
       <libsource lib="device" part="C"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>567FE384</tstamp>
@@ -181,6 +242,10 @@
     <comp ref="P202">
       <value>CONN_01X04</value>
       <footprint>CentralCommand:Grove-2mm</footprint>
+      <fields>
+        <field name="Farnell">1022251</field>
+        <field name="MPN">M20-9990446</field>
+      </fields>
       <libsource lib="conn" part="CONN_01X04"/>
       <sheetpath names="/Comm/" tstamps="/565ED06F/"/>
       <tstamp>565ED26A</tstamp>
@@ -188,6 +253,10 @@
     <comp ref="P203">
       <value>CONN_01X04</value>
       <footprint>CentralCommand:Grove-2mm</footprint>
+      <fields>
+        <field name="MPN">M20-9990446</field>
+        <field name="Farnell">1022251</field>
+      </fields>
       <libsource lib="conn" part="CONN_01X04"/>
       <sheetpath names="/Comm/" tstamps="/565ED06F/"/>
       <tstamp>565ED2F9</tstamp>
@@ -195,6 +264,10 @@
     <comp ref="P201">
       <value>CONN_01X06</value>
       <footprint>Pin_Headers:Pin_Header_Straight_1x06</footprint>
+      <fields>
+        <field name="Farnell">1022255</field>
+        <field name="MPN">M20-9990646</field>
+      </fields>
       <libsource lib="conn" part="CONN_01X06"/>
       <sheetpath names="/Comm/" tstamps="/565ED06F/"/>
       <tstamp>565FC7BB</tstamp>
@@ -202,6 +275,10 @@
     <comp ref="R203">
       <value>0</value>
       <footprint>Resistors_SMD:R_0805</footprint>
+      <fields>
+        <field name="Farnell">9333681</field>
+        <field name="MPN">MC01W08050R</field>
+      </fields>
       <libsource lib="device" part="R"/>
       <sheetpath names="/Comm/" tstamps="/565ED06F/"/>
       <tstamp>565FC7C3</tstamp>
@@ -209,6 +286,10 @@
     <comp ref="R201">
       <value>10K</value>
       <footprint>Resistors_SMD:R_0805</footprint>
+      <fields>
+        <field name="Farnell">2447553</field>
+        <field name="MPN">MCWR08X1002FTL</field>
+      </fields>
       <libsource lib="device" part="R"/>
       <sheetpath names="/Comm/" tstamps="/565ED06F/"/>
       <tstamp>565FC7D1</tstamp>
@@ -216,6 +297,10 @@
     <comp ref="R202">
       <value>10K</value>
       <footprint>Resistors_SMD:R_0805</footprint>
+      <fields>
+        <field name="Farnell">2447553</field>
+        <field name="MPN">MCWR08X1002FTL</field>
+      </fields>
       <libsource lib="device" part="R"/>
       <sheetpath names="/Comm/" tstamps="/565ED06F/"/>
       <tstamp>565FC7D8</tstamp>
@@ -223,13 +308,21 @@
     <comp ref="R204">
       <value>10K</value>
       <footprint>Resistors_SMD:R_0805</footprint>
+      <fields>
+        <field name="Farnell">2447553</field>
+        <field name="MPN">MCWR08X1002FTL</field>
+      </fields>
       <libsource lib="device" part="R"/>
       <sheetpath names="/Comm/" tstamps="/565ED06F/"/>
       <tstamp>565FC7DF</tstamp>
     </comp>
     <comp ref="C201">
-      <value>.1</value>
+      <value>.1U</value>
       <footprint>Capacitors_SMD:C_0805</footprint>
+      <fields>
+        <field name="Farnell">2496944</field>
+        <field name="MPN">0805B104K500CT</field>
+      </fields>
       <libsource lib="device" part="C"/>
       <sheetpath names="/Comm/" tstamps="/565ED06F/"/>
       <tstamp>565FED42</tstamp>
@@ -248,6 +341,10 @@
     <comp ref="P204">
       <value>CONN_01X03</value>
       <footprint>Pin_Headers:Pin_Header_Straight_1x03</footprint>
+      <fields>
+        <field name="Farnell">1022249</field>
+        <field name="MPN">M20-9990346</field>
+      </fields>
       <libsource lib="conn" part="CONN_01X03"/>
       <sheetpath names="/Comm/" tstamps="/565ED06F/"/>
       <tstamp>56617724</tstamp>
@@ -255,6 +352,10 @@
     <comp ref="R209">
       <value>0</value>
       <footprint>Resistors_SMD:R_0805</footprint>
+      <fields>
+        <field name="Farnell">9333681</field>
+        <field name="MPN">MC01W08050R</field>
+      </fields>
       <libsource lib="device" part="R"/>
       <sheetpath names="/Comm/" tstamps="/565ED06F/"/>
       <tstamp>56691488</tstamp>
@@ -262,6 +363,10 @@
     <comp ref="R208">
       <value>0</value>
       <footprint>Resistors_SMD:R_0805</footprint>
+      <fields>
+        <field name="Farnell">9333681</field>
+        <field name="MPN">MC01W08050R</field>
+      </fields>
       <libsource lib="device" part="R"/>
       <sheetpath names="/Comm/" tstamps="/565ED06F/"/>
       <tstamp>566915C1</tstamp>
@@ -269,6 +374,10 @@
     <comp ref="R207">
       <value>0</value>
       <footprint>Resistors_SMD:R_0805</footprint>
+      <fields>
+        <field name="Farnell">9333681</field>
+        <field name="MPN">MC01W08050R</field>
+      </fields>
       <libsource lib="device" part="R"/>
       <sheetpath names="/Comm/" tstamps="/565ED06F/"/>
       <tstamp>56691697</tstamp>
@@ -276,6 +385,10 @@
     <comp ref="R206">
       <value>0</value>
       <footprint>Resistors_SMD:R_0805</footprint>
+      <fields>
+        <field name="Farnell">9333681</field>
+        <field name="MPN">MC01W08050R</field>
+      </fields>
       <libsource lib="device" part="R"/>
       <sheetpath names="/Comm/" tstamps="/565ED06F/"/>
       <tstamp>56691864</tstamp>
@@ -286,6 +399,7 @@
       <fields>
         <field name="MPN">MCP1700T-3302E/TT_</field>
         <field name="Link">http://parts.io/detail/1370896/MCP1700T-3302E%2FTT</field>
+        <field name="Farnell">1296592</field>
       </fields>
       <libsource lib="stm32f030c8" part="MCP1700T-3302E/TT_"/>
       <sheetpath names="/Power/" tstamps="/56440BA6/"/>
@@ -294,6 +408,10 @@
     <comp ref="C305">
       <value>10U</value>
       <footprint>Capacitors_SMD:C_1210</footprint>
+      <fields>
+        <field name="Farnell">	9227989</field>
+        <field name="MPN">C1210C106Z4VACTU</field>
+      </fields>
       <libsource lib="device" part="C"/>
       <sheetpath names="/Power/" tstamps="/56440BA6/"/>
       <tstamp>56441A9A</tstamp>
@@ -301,6 +419,10 @@
     <comp ref="C306">
       <value>10U</value>
       <footprint>Capacitors_SMD:C_1210</footprint>
+      <fields>
+        <field name="Farnell">9227989</field>
+        <field name="MPN">C1210C106Z4VACTU</field>
+      </fields>
       <libsource lib="device" part="C"/>
       <sheetpath names="/Power/" tstamps="/56440BA6/"/>
       <tstamp>56441AA1</tstamp>
@@ -308,6 +430,10 @@
     <comp ref="P302">
       <value>CONN_01X02</value>
       <footprint>Pin_Headers:Pin_Header_Straight_1x02</footprint>
+      <fields>
+        <field name="Farnell">1022247</field>
+        <field name="MPN">M20-9990246</field>
+      </fields>
       <libsource lib="conn" part="CONN_01X02"/>
       <sheetpath names="/Power/" tstamps="/56440BA6/"/>
       <tstamp>56442D62</tstamp>
@@ -318,6 +444,7 @@
       <fields>
         <field name="MPN">FT232RQ-REEL</field>
         <field name="Link">http://parts.io/detail/3622205/FT232RQ-REEL</field>
+        <field name="Farnell">1146033</field>
       </fields>
       <libsource lib="stm32f030c8" part="FT232RQ"/>
       <sheetpath names="/Power/" tstamps="/56440BA6/"/>
@@ -329,6 +456,8 @@
       <fields>
         <field name="MPN">10118193</field>
         <field name="Link">http://parts.io/detail/93261255/10118193-0001LF</field>
+        <field name="Digi-Key">609-4616-1-ND</field>
+        <field name="Farnell">2506569</field>
       </fields>
       <libsource lib="conn" part="USB_B"/>
       <sheetpath names="/Power/" tstamps="/56440BA6/"/>
@@ -337,6 +466,10 @@
     <comp ref="L301">
       <value>FERRITE</value>
       <footprint>Inductors_NEOSID:Neosid_Inductor_SM1206</footprint>
+      <fields>
+        <field name="Farnell">1800342</field>
+        <field name="MPN">742792605</field>
+      </fields>
       <libsource lib="device" part="INDUCTOR"/>
       <sheetpath names="/Power/" tstamps="/56440BA6/"/>
       <tstamp>56560EFA</tstamp>
@@ -344,6 +477,10 @@
     <comp ref="C301">
       <value>.1U</value>
       <footprint>Capacitors_SMD:C_0805</footprint>
+      <fields>
+        <field name="Farnell">2496944</field>
+        <field name="MPN">0805B104K500CT</field>
+      </fields>
       <libsource lib="device" part="C"/>
       <sheetpath names="/Power/" tstamps="/56440BA6/"/>
       <tstamp>565612DF</tstamp>
@@ -354,6 +491,7 @@
       <fields>
         <field name="MPN">B130-13-F</field>
         <field name="Link">http://parts.io/detail/305034/B130-13-F</field>
+        <field name="Farnell">1843713</field>
       </fields>
       <libsource lib="device" part="D_Schottky"/>
       <sheetpath names="/Power/" tstamps="/56440BA6/"/>
@@ -365,6 +503,7 @@
       <fields>
         <field name="MPN">B130-13-F</field>
         <field name="Link">http://parts.io/detail/305034/B130-13-F</field>
+        <field name="Farnell">1843713</field>
       </fields>
       <libsource lib="device" part="D_Schottky"/>
       <sheetpath names="/Power/" tstamps="/56440BA6/"/>
@@ -373,6 +512,10 @@
     <comp ref="C303">
       <value>4.7U</value>
       <footprint>Capacitors_SMD:C_1210</footprint>
+      <fields>
+        <field name="Farnell">1845775</field>
+        <field name="MPN">GRM32RR71C475KA01L</field>
+      </fields>
       <libsource lib="device" part="C"/>
       <sheetpath names="/Power/" tstamps="/56440BA6/"/>
       <tstamp>56567F6F</tstamp>
@@ -380,6 +523,10 @@
     <comp ref="C302">
       <value>.1U</value>
       <footprint>Capacitors_SMD:C_0805</footprint>
+      <fields>
+        <field name="Farnell">2496944</field>
+        <field name="MPN">0805B104K500CT</field>
+      </fields>
       <libsource lib="device" part="C"/>
       <sheetpath names="/Power/" tstamps="/56440BA6/"/>
       <tstamp>56567FCE</tstamp>
@@ -387,6 +534,10 @@
     <comp ref="C304">
       <value>.1U</value>
       <footprint>Capacitors_SMD:C_0805</footprint>
+      <fields>
+        <field name="Farnell">2496944</field>
+        <field name="MPN">0805B104K500CT</field>
+      </fields>
       <libsource lib="device" part="C"/>
       <sheetpath names="/Power/" tstamps="/56440BA6/"/>
       <tstamp>565684E2</tstamp>
@@ -394,6 +545,10 @@
     <comp ref="R301">
       <value>0</value>
       <footprint>Resistors_SMD:R_0805</footprint>
+      <fields>
+        <field name="Farnell">9333681</field>
+        <field name="MPN">MC01W08050R</field>
+      </fields>
       <libsource lib="device" part="R"/>
       <sheetpath names="/Power/" tstamps="/56440BA6/"/>
       <tstamp>565699C8</tstamp>
@@ -401,6 +556,10 @@
     <comp ref="R306">
       <value>270</value>
       <footprint>Resistors_SMD:R_0805</footprint>
+      <fields>
+        <field name="Farnell">2447618</field>
+        <field name="MPN">MCWR08X2700FTL</field>
+      </fields>
       <libsource lib="device" part="R"/>
       <sheetpath names="/Power/" tstamps="/56440BA6/"/>
       <tstamp>5656BA48</tstamp>
@@ -408,6 +567,10 @@
     <comp ref="D303">
       <value>LED</value>
       <footprint>LEDs:LED-0805</footprint>
+      <fields>
+        <field name="Farnell">2062259</field>
+        <field name="MPN">SML-LXT0805GW-TR</field>
+      </fields>
       <libsource lib="device" part="LED"/>
       <sheetpath names="/Power/" tstamps="/56440BA6/"/>
       <tstamp>5656BA7D</tstamp>
@@ -415,6 +578,10 @@
     <comp ref="R307">
       <value>270</value>
       <footprint>Resistors_SMD:R_0805</footprint>
+      <fields>
+        <field name="Farnell">2447618</field>
+        <field name="MPN">MCWR08X2700FTL</field>
+      </fields>
       <libsource lib="device" part="R"/>
       <sheetpath names="/Power/" tstamps="/56440BA6/"/>
       <tstamp>5656BBCB</tstamp>
@@ -422,6 +589,10 @@
     <comp ref="D304">
       <value>LED</value>
       <footprint>LEDs:LED-0805</footprint>
+      <fields>
+        <field name="Farnell">2062259</field>
+        <field name="MPN">SML-LXT0805GW-TR</field>
+      </fields>
       <libsource lib="device" part="LED"/>
       <sheetpath names="/Power/" tstamps="/56440BA6/"/>
       <tstamp>5656BBD1</tstamp>
@@ -443,6 +614,10 @@
     <comp ref="R302">
       <value>0</value>
       <footprint>Resistors_SMD:R_0805</footprint>
+      <fields>
+        <field name="Farnell">9333681</field>
+        <field name="MPN">MC01W08050R</field>
+      </fields>
       <libsource lib="device" part="R"/>
       <sheetpath names="/Power/" tstamps="/56440BA6/"/>
       <tstamp>5656E5CA</tstamp>
@@ -450,6 +625,10 @@
     <comp ref="R303">
       <value>0</value>
       <footprint>Resistors_SMD:R_0805</footprint>
+      <fields>
+        <field name="Farnell">9333681</field>
+        <field name="MPN">MC01W08050R</field>
+      </fields>
       <libsource lib="device" part="R"/>
       <sheetpath names="/Power/" tstamps="/56440BA6/"/>
       <tstamp>5656E668</tstamp>
@@ -788,14 +967,14 @@
     </libpart>
   </libparts>
   <libraries>
+    <library logical="conn">
+      <uri>/usr/share/kicad/library/conn.lib</uri>
+    </library>
     <library logical="device">
-      <uri>C:\Program Files\KiCad\share\kicad\library\device.lib</uri>
+      <uri>/usr/share/kicad/library/device.lib</uri>
     </library>
     <library logical="stm32f030c8">
-      <uri>C:\Users\chris\PCBs\Central-Command\Hardware\stm32f030c8.lib</uri>
-    </library>
-    <library logical="conn">
-      <uri>C:\Program Files\KiCad\share\kicad\library\conn.lib</uri>
+      <uri>/home/vagrant/Desktop/Central-Command/Hardware/stm32f030c8.lib</uri>
     </library>
   </libraries>
   <nets>
