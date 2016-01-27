@@ -250,6 +250,7 @@ F 2 "CentralCommand:FSM2JSMAA-ND" H 5750 5750 60  0001 C CNN
 F 3 "" H 5750 5750 60  0001 C CNN
 F 4 "FSM2JSMAA" H 5750 5750 60  0001 C CNN "MPN"
 F 5 "http://www.digikey.com/product-detail/en/FSM2JSMAA/FSM2JSMAA-ND/2400228" H 5750 5750 60  0001 C CNN "Link"
+F 6 "2468760" H 5750 5750 60  0001 C CNN "Farnell"
 	1    5750 5750
 	0    1    1    0   
 $EndComp
