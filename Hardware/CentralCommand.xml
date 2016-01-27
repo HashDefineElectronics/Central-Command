@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/home/vagrant/Desktop/Central-Command/Hardware/CentralCommand.sch</source>
-    <date>Wed 27 Jan 2016 06:30:31 PM UTC</date>
+    <date>Wed 27 Jan 2016 10:05:18 PM UTC</date>
     <tool>Eeschema 4.0.1-3.201512221402+6198~38~ubuntu14.04.1-stable</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -415,7 +415,7 @@
       <value>10U</value>
       <footprint>Capacitors_SMD:C_1210</footprint>
       <fields>
-        <field name="Farnell">	9227989</field>
+        <field name="Farnell">9227989</field>
         <field name="MPN">C1210C106Z4VACTU</field>
       </fields>
       <libsource lib="device" part="C"/>
@@ -973,14 +973,14 @@
     </libpart>
   </libparts>
   <libraries>
+    <library logical="device">
+      <uri>/usr/share/kicad/library/device.lib</uri>
+    </library>
     <library logical="stm32f030c8">
       <uri>/home/vagrant/Desktop/Central-Command/Hardware/stm32f030c8.lib</uri>
     </library>
     <library logical="conn">
       <uri>/usr/share/kicad/library/conn.lib</uri>
-    </library>
-    <library logical="device">
-      <uri>/usr/share/kicad/library/device.lib</uri>
     </library>
   </libraries>
   <nets>
