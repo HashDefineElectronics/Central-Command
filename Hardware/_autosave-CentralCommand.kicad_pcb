@@ -22,7 +22,7 @@
     (33 F.Adhes user)
     (34 B.Paste user)
     (35 F.Paste user)
-    (36 B.SilkS user)
+    (36 B.SilkS user hide)
     (37 F.SilkS user)
     (38 B.Mask user)
     (39 F.Mask user)
@@ -68,7 +68,7 @@
     (pad_to_mask_clearance 0)
     (aux_axis_origin 0 0)
     (grid_origin 126.2413 97.9678)
-    (visible_elements FFFEFF9F)
+    (visible_elements FFFFFB9F)
     (pcbplotparams
       (layerselection 0x010fc_80000007)
       (usegerberextensions false)
