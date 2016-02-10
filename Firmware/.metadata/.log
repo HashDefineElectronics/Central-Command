@@ -1,0 +1,10 @@
+!SESSION 2016-02-10 14:05:14.370 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.7.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-02-10 14:09:10.998
+!MESSAGE Indexed 'BoardTest' (22 sources, 141 headers) in 25.9 sec: 10,885 declarations; 32,043 references; 4 unresolved inclusions; 110 syntax errors; 6,100 unresolved names (12%)
