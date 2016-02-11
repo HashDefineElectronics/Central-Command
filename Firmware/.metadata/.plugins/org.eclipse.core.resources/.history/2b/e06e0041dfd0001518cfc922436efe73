@@ -1,0 +1,28 @@
+//
+// This file is part of the GNU ARM Eclipse distribution.
+// Copyright (c) 2014 Liviu Ionescu.
+//
+
+// ----------------------------------------------------------------------------
+#include "stm32f0xx.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+void HardwareSetup(void)
+{
+
+	RCC->
+
+}
+
+int main(void)
+{
+	HardwareSetup();
+
+  // Infinite loop
+  for( ;; )
+    {
+       // Add your code here.
+    }
+}
+

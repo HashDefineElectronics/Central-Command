@@ -1,11 +1,7 @@
-14:14:44 **** Incremental Build of configuration Debug for project BoardTest ****
-make all 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "BoardTest.elf"
-   text	   data	    bss	    dec	    hex	filename
-   1288	     76	    268	   1632	    660	BoardTest.elf
-Finished building: BoardTest.siz
+17:17:54 **** Clean-only build of configuration Debug for project BoardTest ****
+make clean 
+rm -rf  BoardTest.siz  ./system/src/stm32f0-stdperiph/stm32f0xx_gpio.o ./system/src/stm32f0-stdperiph/stm32f0xx_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f0xx.o ./system/src/cmsis/vectors_stm32f0xx.o  ./src/_write.o ./src/main.o  ./system/src/stm32f0-stdperiph/stm32f0xx_gpio.d ./system/src/stm32f0-stdperiph/stm32f0xx_rcc.d  ./system/src/newlib/_exit.d ./system/src/newlib/_sbrk.d ./system/src/newlib/_startup.d ./system/src/newlib/_syscalls.d ./system/src/newlib/assert.d  ./system/src/diag/Trace.d ./system/src/diag/trace_impl.d  ./system/src/cortexm/_initialize_hardware.d ./system/src/cortexm/_reset_hardware.d ./system/src/cortexm/exception_handlers.d  ./system/src/cmsis/system_stm32f0xx.d ./system/src/cmsis/vectors_stm32f0xx.d  ./src/_write.d ./src/main.d  BoardTest.hex  ./system/src/newlib/_cxx.d  BoardTest.elf
  
 
-14:14:44 Build Finished (took 96ms)
+17:17:54 Build Finished (took 84ms)
 
