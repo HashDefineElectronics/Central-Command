@@ -1,16 +1,19 @@
-//
-// This file is part of the GNU ARM Eclipse distribution.
-// Copyright (c) 2014 Liviu Ionescu.
-//
+/////////////////////////////////////////////////////////////////////////
+///	\file main.c
+///	\brief This is the main program code.
+///
+///	\author Ronald Sousa (Opticalworm)
+/////////////////////////////////////////////////////////////////////////
+#include "common.h"
+#include "Terminal.h"
 
-// ----------------------------------------------------------------------------
-#include "stm32f0xx.h"
-#include <stdio.h>
-#include <stdlib.h>
-
+/////////////////////////////////////////////////////////////////////////
+///	\brief Configures the initial hardware. Curretly it enables the
+///	clock output
+/////////////////////////////////////////////////////////////////////////
 void HardwareSetup(void)
 {
-	// enble the GPIOA clock
+	// enable the GPIOA clock
 	RCC->AHBENR |= RCC_AHBENR_GPIOAEN;
 	GPIOA->MODER &= ~((uint32_t)3<< 16); // reset the moder register
 	GPIOA->MODER |= ((uint32_t)2<<16); // set PA8 as alternative function
@@ -25,14 +28,17 @@ void HardwareSetup(void)
 
 }
 
-int main(void)
+/////////////////////////////////////////////////////////////////////////
+///	\brief the first user code function to be called after the ARM M0
+///	has initial.
+/////////////////////////////////////////////////////////////////////////
+void main(void)
 {
 	HardwareSetup();
+    Terminal_Init();
 
-  // Infinite loop
-  for( ;; )
+    for ( ;; )
     {
-       // Add your code here.
+    	Terminal_Process();
     }
 }
-
