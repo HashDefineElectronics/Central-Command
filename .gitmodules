@@ -1,0 +1,3 @@
+[submodule "Hardware/CE_KiCadLib"]
+	path = Hardware/CE_KiCadLib
+	url = git@github.com:ContextualElectronics/CE_KiCadLib.git
