@@ -1,4 +1,15 @@
 EESchema Schematic File Version 2
+LIBS:CE_IC
+LIBS:CE_Regulator
+LIBS:CE_Connector
+LIBS:CE_Capacitor
+LIBS:CE_Crystal
+LIBS:CE_Diode
+LIBS:CE_Inductor
+LIBS:CE_Resistor
+LIBS:CE_Switch
+LIBS:CE_Template
+LIBS:CE_VirtualSymbols
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -28,8 +39,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:stm32f030c8
-LIBS:CentralCommand-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
