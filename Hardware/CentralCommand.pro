@@ -1,4 +1,4 @@
-update=Thu 19 Nov 2015 09:17:10 PM EST
+update=Wed 07 Sep 2016 12:18:21 PM BST
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,21 +27,21 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=CE_KiCadLib
 [eeschema/libraries]
-LibName1=Central Command-rescue
-LibName2=power
-LibName3=device
-LibName4=transistors
-LibName5=conn
-LibName6=linear
-LibName7=regul
-LibName8=74xx
-LibName9=cmos4000
-LibName10=adc-dac
-LibName11=memory
-LibName12=xilinx
-LibName13=special
+LibName1=CE_KiCadLib/CE_IC
+LibName2=CE_KiCadLib/CE_Regulator
+LibName3=power
+LibName4=device
+LibName5=transistors
+LibName6=conn
+LibName7=linear
+LibName8=regul
+LibName9=74xx
+LibName10=cmos4000
+LibName11=adc-dac
+LibName12=memory
+LibName13=xilinx
 LibName14=microcontrollers
 LibName15=dsp
 LibName16=microchip
@@ -60,4 +60,3 @@ LibName28=opto
 LibName29=atmel
 LibName30=contrib
 LibName31=valves
-LibName32=stm32f030c8
