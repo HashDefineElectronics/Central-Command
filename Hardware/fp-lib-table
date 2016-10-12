@@ -1,3 +1,12 @@
 (fp_lib_table
   (lib (name CentralCommand)(type KiCad)(uri "$(KIPRJMOD)/CentralCommand.pretty")(options "")(descr ""))
+  (lib (name CE_Capacitor)(type KiCad)(uri "$(KIPRJMOD)/CE_KiCadLib/Footprint/CE_Capacitor.pretty")(options "")(descr ""))
+  (lib (name CE_Connector)(type KiCad)(uri "$(KIPRJMOD)/CE_KiCadLib/Footprint/CE_Connector.pretty")(options "")(descr ""))
+  (lib (name CE_Crystal)(type KiCad)(uri "$(KIPRJMOD)/CE_KiCadLib/Footprint/CE_Crystal.pretty")(options "")(descr ""))
+  (lib (name CE_Diode)(type KiCad)(uri "$(KIPRJMOD)/CE_KiCadLib/Footprint/CE_Diode.pretty")(options "")(descr ""))
+  (lib (name CE_IC)(type KiCad)(uri "$(KIPRJMOD)/CE_KiCadLib/Footprint/CE_IC.pretty")(options "")(descr ""))
+  (lib (name CE_Inductor)(type KiCad)(uri "$(KIPRJMOD)/CE_KiCadLib/Footprint/CE_Inductor.pretty")(options "")(descr ""))
+  (lib (name CE_Logo)(type KiCad)(uri "$(KIPRJMOD)/CE_KiCadLib/Footprint/CE_Logo.pretty")(options "")(descr ""))
+  (lib (name CE_Resistor)(type KiCad)(uri "$(KIPRJMOD)/CE_KiCadLib/Footprint/CE_Resistor.pretty")(options "")(descr ""))
+  (lib (name CE_Switch)(type KiCad)(uri "$(KIPRJMOD)/CE_KiCadLib/Footprint/CE_Switch.pretty")(options "")(descr ""))
 )
