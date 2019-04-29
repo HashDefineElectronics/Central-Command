@@ -32,7 +32,7 @@ void HardwareSetup(void)
 ///	\brief the first user code function to be called after the ARM M0
 ///	has initial.
 /////////////////////////////////////////////////////////////////////////
-void main(void)
+int main(void)
 {
 	HardwareSetup();
     Terminal_Init();

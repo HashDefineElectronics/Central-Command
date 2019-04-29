@@ -128,7 +128,7 @@ static uint_fast8_t Open(const uint32_t baudrate)
 		GPIOA->MODER &= ~((GPIO_MODER_MODER2) | (GPIO_MODER_MODER3)); // clear PA2 moder
 		GPIOA->MODER  |= GPIO_MODER_MODER2_1 | GPIO_MODER_MODER3_1; // Set PA2 to alter function
 
-		GPIOA->AFR[0] &= ((GPIO_AFRL_AFR2) | (GPIO_AFRL_AFR3)); // clear PA2 config
+		GPIOA->AFR[0] &= ~((GPIO_AFRL_AFSEL2_Msk) | (GPIO_AFRL_AFSEL3_Msk)); // clear PA2 config
 		GPIOA->AFR[0] |= GPIO_AFRL_AFR2_0 | GPIO_AFRL_AFR3_0;
 
 		// set baudrate

@@ -165,7 +165,7 @@ static int_fast8_t ProcessData(uint8_t *source, uint32_t length, ListOfParameter
 	{
 		destination->NumberOfParameter = 0;
 		return FALSE;
-	} else if ( 's' == !destination->List[0].Type && 'S' == !destination->List[0].Type)
+	} else if ( 's' != destination->List[0].Type && 'S' != destination->List[0].Type)
 	{
 		destination->NumberOfParameter = 0;
 		return ERROR;
@@ -183,7 +183,7 @@ static int_fast8_t ProcessData(uint8_t *source, uint32_t length, ListOfParameter
 			/// \fallthrough
 		case 'U':
 			/// \fallthrough
-			destination->List[ParameterCounter].Type += 32; // convert to uppercase
+			destination->List[ParameterCounter].Type += 32; // convert to lowercase
 		case 's':
 			/// \fallthrough
 		case 'u':
